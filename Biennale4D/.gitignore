@@ -46,3 +46,5 @@ $RECYCLE.BIN/
 WorkingAssets/
 Library/metadata
 Assets/StreamAssets
+Assets/SteamVR
+Assets/SteamVR_Unity_Toolkit
