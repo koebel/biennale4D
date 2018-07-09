@@ -43,7 +43,12 @@ public class HapticFeedback : MonoBehaviour {
         SetScreenOverlayColor(m_CurrentScreenOverlayColor);
     }
 
-
+    /*
+     * TODO: FIX THIS, somehow this causes the following Error
+     * IndexOutOfRangeException: Array index is out of range.
+     * SteamVR_Controller.Input (Int32 deviceIndex) (at Assets/SteamVR/Scripts/SteamVR_Controller.cs:151)
+     * HapticFeedback.FixedUpdate () (at Assets/Scripts/HapticFeedback.cs:49)
+     * 
     void FixedUpdate () {
         deviceLeft = SteamVR_Controller.Input((int)trackedObjLeft.index);
         deviceRight = SteamVR_Controller.Input((int)trackedObjRight.index);
@@ -54,9 +59,9 @@ public class HapticFeedback : MonoBehaviour {
             deviceRight.TriggerHapticPulse(200);
         }
     }
+    */
 
-
-   void OnTriggerEnter(Collider col)
+    void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Wall")
         {
