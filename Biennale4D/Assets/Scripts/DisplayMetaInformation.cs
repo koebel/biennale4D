@@ -132,14 +132,17 @@ public class DisplayMetaInformation : MonoBehaviour {
                 // retrieve metadata from hit object
                 hitObject = hit.collider.gameObject;
 
-                currentObject = hitObject.GetComponent<WerkInfo>().artist + "<br><b>" + hitObject.GetComponent<WerkInfo>().title + "</b><br>" + hitObject.GetComponent<WerkInfo>().year;
-
-                // check if there is an artist that matches with artist id
-                for (int i = 0; i < allArtists.Length; i++)
+                if (hitObject.tag == artObject)
                 {
-                    allArtists[i] = artists.transform.GetChild(i).gameObject;
-                    if (hitObject.GetComponent<WerkInfo>().artist_id == allArtists[i].GetComponent<ArtistInfo>().artist_id) {
-                        artist = allArtists[i];
+                    currentObject = hitObject.GetComponent<WerkInfo>().artist + "<br><b>" + hitObject.GetComponent<WerkInfo>().title + "</b><br>" + hitObject.GetComponent<WerkInfo>().year;
+
+                    // check if there is an artist that matches with artist id
+                    for (int i = 0; i < allArtists.Length; i++)
+                    {
+                        allArtists[i] = artists.transform.GetChild(i).gameObject;
+                        if (hitObject.GetComponent<WerkInfo>().artist_id == allArtists[i].GetComponent<ArtistInfo>().artist_id) {
+                            artist = allArtists[i];
+                        }
                     }
                 }
 
@@ -160,6 +163,7 @@ public class DisplayMetaInformation : MonoBehaviour {
                 if (hit.collider.gameObject.tag == artObject)
                 {
                     // show sphere at hit positon
+                    /* TODO: maybe replace this with other additional pointer */
                     markerOffset = ray.direction;
                     markerOffset *= 0.04f;
                     marker.transform.position = (hit.point - markerOffset);
