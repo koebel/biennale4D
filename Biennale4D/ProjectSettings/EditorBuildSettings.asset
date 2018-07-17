@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Demo.unity
     guid: 7c5b3c2e9408db640befff0a13b0e2e6
   - enabled: 1
+    path: Assets/Scenes/Pavillon1952.unity
+    guid: 50395c65d4822f4458e9ca60fd9b138a
+  - enabled: 1
     path: Assets/Scenes/Pavillon1952-experiment.unity
     guid: 64b85b56e2acd7e4a8ba22e536ba2062
   - enabled: 1
