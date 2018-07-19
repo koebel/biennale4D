@@ -7,7 +7,7 @@ using System.Collections;
     created on 19th july 2018 by k2
 
     IMPORTANT:
- 	rendering mode of the shader of the selected object shout be set to "Transparent" in order to be able to manipulate the alpha value
+ 	rendering mode of the shader of the to "obj" assigned game object shout be set to "Transparent" in order to be able to manipulate the alpha value
 */
 
 

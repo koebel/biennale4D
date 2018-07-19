@@ -21,13 +21,21 @@ public class HapticFeedback : MonoBehaviour {
     public float fadeSpeed = 1.0f; 
     private bool fade = true;
 
+
     // fade in & out Script von http://wiki.unity3d.com/index.php/FadeInOut
-    private GUIStyle m_BackgroundStyle = new GUIStyle();        // Style for background tiling
-    private Texture2D m_FadeTexture;                // 1x1 pixel texture used for fading
-    private Color m_CurrentScreenOverlayColor = new Color(0, 0, 0, 0);  // default starting color: black and fully transparrent
-    private Color m_TargetScreenOverlayColor = new Color(0, 0, 0, 0);   // default target color: black and fully transparrent
-    private Color m_DeltaColor = new Color(0, 0, 0, 0);     // the delta-color is basically the "speed / second" at which the current color should change
-    private int m_FadeGUIDepth = -1000;				// make sure this texture is drawn on top of everything
+
+    // Style for background tiling
+    private GUIStyle m_BackgroundStyle = new GUIStyle();
+    // 1x1 pixel texture used for fading
+    private Texture2D m_FadeTexture;
+    // default starting color: black and fully transparrent
+    private Color m_CurrentScreenOverlayColor = new Color(0, 0, 0, 0);
+    // default target color: black and fully transparrent
+    private Color m_TargetScreenOverlayColor = new Color(0, 0, 0, 0);
+    // the delta-color is basically the "speed / second" at which the current color should change
+    private Color m_DeltaColor = new Color(0, 0, 0, 0);
+    // make sure this texture is drawn on top of everything
+    private int m_FadeGUIDepth = -1000;				
 
     private Color black = new Color(0, 0, 0, 1);
     private Color clear = new Color(0, 0, 0, 0);
@@ -48,24 +56,33 @@ public class HapticFeedback : MonoBehaviour {
      * IndexOutOfRangeException: Array index is out of range.
      * SteamVR_Controller.Input (Int32 deviceIndex) (at Assets/SteamVR/Scripts/SteamVR_Controller.cs:151)
      * HapticFeedback.FixedUpdate () (at Assets/Scripts/HapticFeedback.cs:49)
-     * 
+     */
     void FixedUpdate () {
-        deviceLeft = SteamVR_Controller.Input((int)trackedObjLeft.index);
-        deviceRight = SteamVR_Controller.Input((int)trackedObjRight.index);
+        //deviceLeft = SteamVR_Controller.Input(trackedObjLeft.index);
+        //deviceRight = SteamVR_Controller.Input((int)trackedObjRight.index);
 
         if (proviceFeedback)
         {
-            deviceLeft.TriggerHapticPulse(200);
-            deviceRight.TriggerHapticPulse(200);
+            //deviceLeft.TriggerHapticPulse(200);
+            //deviceRight.TriggerHapticPulse(200);
+            SteamVR_Controller.Input((int)trackedObjRight.index).TriggerHapticPulse(200);
+            SteamVR_Controller.Input((int)trackedObjLeft.index).TriggerHapticPulse(200);
         }
     }
-    */
+    
 
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Wall")
         {
             Debug.Log("Wall Collision");
+            proviceFeedback = true;
+            StartFade(black, 0.1f);
+        }
+
+        if (col.gameObject.tag == "ArtObject")
+        {
+            Debug.Log("ArtObject Collision");
             proviceFeedback = true;
             StartFade(black, 0.1f);
         }
@@ -130,7 +147,6 @@ public class HapticFeedback : MonoBehaviour {
             m_DeltaColor = (m_TargetScreenOverlayColor - m_CurrentScreenOverlayColor) / fadeDuration;
         }
     }
-
 }
 
 
