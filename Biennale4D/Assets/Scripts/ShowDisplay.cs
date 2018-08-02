@@ -14,7 +14,10 @@ public class ShowDisplay : MonoBehaviour {
     public float radius = 2.5f;
     public float speed = 3.0f;
     public GameObject display;
+    public GameObject background;
     public GameObject marker;
+
+    //private GameObject[] displayComponents;
 
     private float distance;
     private bool isOutside = true;
@@ -22,19 +25,52 @@ public class ShowDisplay : MonoBehaviour {
     private float alphaShow = 1f;
 
     private Color displayCol;
+    private Color backgroundCol;
     private Material displayMat;
 
 
     // Use this for initialization
     void Start () {
+        //displayComponents = display.GetComponentsInChildren<GameObject>();
+    
 
         // set display to invisible
         display.GetComponent<Renderer>().enabled = false;
+        background.GetComponent<Renderer>().enabled = false;
+
+        /*
+        foreach (GameObject comp in displayComponents)
+        {
+            comp.GetComponent<Renderer>().enabled = false;
+        }
+        */
 
         // set alpha of display to zero
         displayCol = display.GetComponent<Renderer>().material.color;
-        displayCol.a = 0f;
+        displayCol.a = alphaHide;
         display.GetComponent<Renderer>().material.color = displayCol;
+
+        backgroundCol = background.GetComponent<Renderer>().material.color;
+        backgroundCol.a = alphaHide;
+        background.GetComponent<Renderer>().material.color = backgroundCol;
+
+        /*
+        foreach (GameObject comp in displayComponents)
+        {
+            displayCol = comp.GetComponent<Renderer>().material.color;
+            displayCol.a = alphaHide;
+            comp.GetComponent<Renderer>().material.color = displayCol;
+        }
+        */
+
+        /*
+        foreach (Transform comp in displayComponents)
+        {
+            displayCol = comp.gameObject.GetComponent<Renderer>().material.color;
+            displayCol.a = alphaHide;
+            comp.gameObject.GetComponent<Renderer>().material.color = displayCol;
+        }
+        */
 
         distance = 1000f;
     }
@@ -66,9 +102,12 @@ public class ShowDisplay : MonoBehaviour {
     {
         //display.SetActive(true);
         display.GetComponent<Renderer>().enabled = true;
-
         displayCol.a = alphaShow;
         display.GetComponent<Renderer>().material.color = displayCol;
+
+        background.GetComponent<Renderer>().enabled = true;
+        backgroundCol.a = alphaShow;
+        background.GetComponent<Renderer>().material.color = backgroundCol;
 
         /*
         // .material getter clones the material, 
@@ -102,9 +141,12 @@ public class ShowDisplay : MonoBehaviour {
     {
         //display.SetActive(false);
         display.GetComponent<Renderer>().enabled = false;
-
         displayCol.a = alphaHide;
         display.GetComponent<Renderer>().material.color = displayCol;
+
+        background.GetComponent<Renderer>().enabled = false;
+        backgroundCol.a = alphaHide;
+        background.GetComponent<Renderer>().material.color = backgroundCol;
 
         /*
         // .material getter clones the material, 
