@@ -11,8 +11,9 @@ using System.Collections;
 
 public class ShowDisplay : MonoBehaviour {
    
-    public float radius = 2.5f;
-    public float speed = 3.0f;
+    public float radius = 2.0f;
+    public float speed = 1.0f;
+    public bool isVisibleAtStart = false;
     public GameObject display;
     public GameObject marker;
 
@@ -23,19 +24,19 @@ public class ShowDisplay : MonoBehaviour {
     private float alphaHide = 0f;
     private float alphaShow = 1f;
 
+    // set update frequence for transitions (e.g. fade)
+    private float frequence = 90;
+    private float updateFrequence;
+
     private Color displayCol;
-    private Color displayHidden;
-    private Color displayShow;
-    private Material displayMat;
-    private Renderer displayRend;
 
 
     // Use this for initialization
     void Start () {
+        updateFrequence = 1 / frequence;
+
+
         //displayComponents = display.GetComponentsInChildren<GameObject>();
-    
-        // set display to invisible
-        display.GetComponent<Renderer>().enabled = true;
 
         /*
         foreach (GameObject comp in displayComponents)
@@ -44,17 +45,20 @@ public class ShowDisplay : MonoBehaviour {
         }
         */
 
-        // set alpha of display to zero
-        displayRend = display.GetComponent<Renderer>();
-        displayMat = display.GetComponent<Renderer>().material;
 
+        // set alpha of display to given visibility parameter
         displayCol = display.GetComponent<Renderer>().material.color;
-        displayCol.a = alphaShow;
-        displayShow = displayCol;
-        displayCol.a = alphaHide;
-        displayHidden = displayCol;
+        if (isVisibleAtStart)
+        {
+            displayCol.a = alphaShow;
+        }
+        else
+        {
+            displayCol.a = alphaHide;
+        }
         display.GetComponent<Renderer>().material.color = displayCol;
 
+        // instanciate distance --> just for unity :-)
         distance = 1000f;
     }
 
@@ -68,76 +72,58 @@ public class ShowDisplay : MonoBehaviour {
         if (distance < radius && isOutside)
         {
             isOutside = false;
-            //FadeInX(speed);
             StopAllCoroutines();
-            StartCoroutine(FadeIn(speed));
+            StartCoroutine(FadeIn(speed, alphaShow));
         }
 
         if (!isOutside && distance > radius)
         {
             isOutside = true;
-            //FadeOutX(speed);
             StopAllCoroutines();
-            StartCoroutine(FadeOut(speed));
+            StartCoroutine(FadeOut(speed, alphaHide));
             }
     }
 
-    
-    void FadeInX(float fadeTime)
-    {
-        //display.GetComponent<Renderer>().enabled = true;
-        displayCol = display.GetComponent<Renderer>().material.color;
-        displayCol.a = alphaShow;
-        display.GetComponent<Renderer>().material.color = displayCol;
 
-        /*
-        var alphaSpectrum = alphaShow - alphaHide;
-        var alphaIncr = alphaSpectrum / fadeTime;
-        //var alphaCurrent = alphaHide;
-
-        // fade in
-        for (i = 0; i < fadeTime; ++i) {
-            displayCol.a += alphaIncr;
-            display.GetComponent<Renderer>().material.color = displayCol;
-            yield return new WaitForSeconds(0.001f);
-        }
-        */
-    }
-
-    void FadeOutX(float fadeTime)
-    {
-        //display.GetComponent<Renderer>().enabled = false;
-        displayCol = display.GetComponent<Renderer>().material.color;
-        displayCol.a = alphaHide;
-        display.GetComponent<Renderer>().material.color = displayCol;
-
-        Debug.Log("hide display");
-    }
-
-
-
-    IEnumerator FadeIn(float fadeTime)
+    IEnumerator FadeIn(float fadeTime, float targetOpacity)
     {
         Debug.Log("FadeIn-Coroutine started");
+
+        // get current color of material
         Color c = display.GetComponent<Renderer>().material.color;
-        for (float f= 0f; f<=alphaShow; f += 0.02f)
+        // calculate difference between current opacity and target opacity
+        float alphaSpectrum = Mathf.Abs(targetOpacity - c.a);
+        // calculate incrementation steps
+        float alphaIncr = alphaSpectrum / (fadeTime*frequence);
+
+        // fade in
+        for (float alpha = c.a; alpha <= targetOpacity; alpha += alphaIncr)
         {
-            c.a = f;
-            displayRend.material.color = c;
-            yield return new WaitForSeconds(0.05f);
+            c.a += alphaIncr;
+            display.GetComponent<Renderer>().material.color = c;
+            yield return new WaitForSeconds(updateFrequence);
         }
     }
 
-    IEnumerator FadeOut(float fadeTime)
+
+    IEnumerator FadeOut(float fadeTime, float targetOpacity)
     {
         Debug.Log("FadeOut-Coroutine started");
+
+        // get current color of material
         Color c = display.GetComponent<Renderer>().material.color;
-        for (float f = 1.0f; f >= alphaHide; f -= 0.02f)
+        // calculate difference between current opacity and target opacity
+        float alphaSpectrum = Mathf.Abs(targetOpacity - c.a);
+        // calculate incrementation steps
+        float alphaDecr = alphaSpectrum / (fadeTime * frequence);
+
+        // fade out
+        for (float alpha = c.a; alpha >= targetOpacity; alpha -= alphaDecr)
         {
-            c.a = f;
-            displayRend.material.color = c;
-            yield return new WaitForSeconds(0.05f);
-        }        
+            c.a -= alphaDecr;
+            display.GetComponent<Renderer>().material.color = c;
+            yield return new WaitForSeconds(updateFrequence);
+        }     
     }
 
 }
