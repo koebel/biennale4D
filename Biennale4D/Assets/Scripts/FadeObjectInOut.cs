@@ -22,8 +22,7 @@ public class FadeObjectInOut : MonoBehaviour
     // publically editable speed
     public float fadeDelay = 0.0f;
     public float fadeTime = 0.5f;
-    public bool fadeInOnStart = false;
-    public bool fadeOutOnStart = false;
+    public bool visibleOnStart = false;
     private bool logInitialFadeSequence = false;
     public float distance = 1.0f;
 
@@ -43,13 +42,13 @@ public class FadeObjectInOut : MonoBehaviour
         //yield return null; 
         yield return new WaitForSeconds(fadeDelay);
 
-        if (fadeInOnStart)
+        if (visibleOnStart)
         {
             logInitialFadeSequence = true;
             FadeIn();
         }
 
-        if (fadeOutOnStart)
+        else
         {
             FadeOut(fadeTime);
         }
@@ -64,13 +63,6 @@ public class FadeObjectInOut : MonoBehaviour
 
     void Update()
     {
-
-        // fade out on key input
-        if (Input.GetKeyDown("space"))
-        {
-            FadeIn();
-        }
-
         // display billboard
         current_dist = Vector3.Distance(Camera.main.transform.position, POI.transform.position);
         //Debug.Log(current_dist);
@@ -80,7 +72,6 @@ public class FadeObjectInOut : MonoBehaviour
         {
             outside = false;
             FadeIn();
-
         }
         // user leaves the defined range
         if (!outside && current_dist > distance)
@@ -130,10 +121,8 @@ public class FadeObjectInOut : MonoBehaviour
             rendererObjects[i].enabled = true;
         }
 
-
         // get current max alpha
         float alphaValue = MaxAlpha();
-
 
         // This is a special case for objects that are set to fade in on start. 
         // it will treat them as alpha 0, despite them not being so. 
@@ -153,7 +142,7 @@ public class FadeObjectInOut : MonoBehaviour
                 Color newColor = (colors != null ? colors[i] : rendererObjects[i].material.color);
                 newColor.a = Mathf.Min(newColor.a, alphaValue);
                 newColor.a = Mathf.Clamp(newColor.a, 0.0f, 1.0f);
-                rendererObjects[i].material.SetColor("_Color", newColor);
+                rendererObjects[i].material.color = newColor;
             }
 
             yield return null;

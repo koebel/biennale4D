@@ -6,7 +6,7 @@ using System.Collections;
     created on 19th july 2018 by k2
 
     IMPORTANT:
- 	rendering mode of the shader of the to "display" assigned game object shout be set to "Transparent" in order to be able to manipulate the alpha value
+ 	rendering mode of the shader of the to "display" assigned game object shout be set to "Transparent" (Legacy Shaders/Transparent/Diffuse) in order to be able to manipulate the alpha value
 */
 
 public class ShowDisplay : MonoBehaviour {
@@ -14,29 +14,28 @@ public class ShowDisplay : MonoBehaviour {
     public float radius = 2.5f;
     public float speed = 3.0f;
     public GameObject display;
-    public GameObject background;
     public GameObject marker;
 
     //private GameObject[] displayComponents;
 
     private float distance;
     private bool isOutside = true;
-    private float alphaHide = 0f;
+    private float alphaHide = 0.1f;
     private float alphaShow = 1f;
 
     private Color displayCol;
-    private Color backgroundCol;
+    private Color displayHidden;
+    private Color displayShow;
     private Material displayMat;
+    private Renderer displayRend;
 
 
     // Use this for initialization
     void Start () {
         //displayComponents = display.GetComponentsInChildren<GameObject>();
     
-
         // set display to invisible
-        display.GetComponent<Renderer>().enabled = false;
-        background.GetComponent<Renderer>().enabled = false;
+        display.GetComponent<Renderer>().enabled = true;
 
         /*
         foreach (GameObject comp in displayComponents)
@@ -46,31 +45,15 @@ public class ShowDisplay : MonoBehaviour {
         */
 
         // set alpha of display to zero
+        displayRend = display.GetComponent<Renderer>();
+        displayMat = display.GetComponent<Renderer>().material;
+
         displayCol = display.GetComponent<Renderer>().material.color;
+        displayCol.a = alphaShow;
+        displayShow = displayCol;
         displayCol.a = alphaHide;
+        displayHidden = displayCol;
         display.GetComponent<Renderer>().material.color = displayCol;
-
-        backgroundCol = background.GetComponent<Renderer>().material.color;
-        backgroundCol.a = alphaHide;
-        background.GetComponent<Renderer>().material.color = backgroundCol;
-
-        /*
-        foreach (GameObject comp in displayComponents)
-        {
-            displayCol = comp.GetComponent<Renderer>().material.color;
-            displayCol.a = alphaHide;
-            comp.GetComponent<Renderer>().material.color = displayCol;
-        }
-        */
-
-        /*
-        foreach (Transform comp in displayComponents)
-        {
-            displayCol = comp.gameObject.GetComponent<Renderer>().material.color;
-            displayCol.a = alphaHide;
-            comp.gameObject.GetComponent<Renderer>().material.color = displayCol;
-        }
-        */
 
         distance = 1000f;
     }
@@ -82,33 +65,35 @@ public class ShowDisplay : MonoBehaviour {
         distance = Vector3.Distance(Camera.main.transform.position, marker.transform.position);
         //Debug.Log("Distance: " + distance);
 
-        // TODO: isOutside doesn't changes properly if User teleports himself on top layer of marker
-
         if (distance < radius && isOutside)
         {
-            isOutside = false;         
-            FadeIn(speed);
+            isOutside = false;
+            FadeInX(speed);
+            //StartCoroutine("FadeIn");
         }
 
         if (!isOutside && distance > radius)
         {
             isOutside = true;
-            FadeOut(speed);
-        }
+            FadeOutX(speed);
+            //StartCoroutine("FadeOut");
+            }
     }
 
-
-    void FadeIn(float fadeTime)
+    
+    void FadeInX(float fadeTime)
     {
-        //display.SetActive(true);
-        display.GetComponent<Renderer>().enabled = true;
+        //display.GetComponent<Renderer>().enabled = true;
+        displayCol = display.GetComponent<Renderer>().material.color;
         displayCol.a = alphaShow;
         display.GetComponent<Renderer>().material.color = displayCol;
 
-        background.GetComponent<Renderer>().enabled = true;
+        /*
+        //background.GetComponent<Renderer>().enabled = true;
+        backgroundCol = background.GetComponent<Renderer>().material.color;
         backgroundCol.a = alphaShow;
         background.GetComponent<Renderer>().material.color = backgroundCol;
-
+        */
         /*
         // .material getter clones the material, 
         // so cache this copy in a member variable so we can dispose of it when we're done.
@@ -137,17 +122,19 @@ public class ShowDisplay : MonoBehaviour {
         */
     }
 
-    void FadeOut(float fadeTime)
+    void FadeOutX(float fadeTime)
     {
-        //display.SetActive(false);
-        display.GetComponent<Renderer>().enabled = false;
+        //display.GetComponent<Renderer>().enabled = false;
+        displayCol = display.GetComponent<Renderer>().material.color;
         displayCol.a = alphaHide;
         display.GetComponent<Renderer>().material.color = displayCol;
 
-        background.GetComponent<Renderer>().enabled = false;
+        /*
+        //background.GetComponent<Renderer>().enabled = false;
+        backgroundCol = background.GetComponent<Renderer>().material.color;
         backgroundCol.a = alphaHide;
         background.GetComponent<Renderer>().material.color = backgroundCol;
-
+        */
         /*
         // .material getter clones the material, 
         // so cache this copy in a member variable so we can dispose of it when we're done.
@@ -197,6 +184,72 @@ public class ShowDisplay : MonoBehaviour {
         }
     }
 
+
+    //from https://answers.unity.com/questions/1230671/how-to-fade-out-a-game-object-using-c.html
+    private IEnumerator Lerp_MeshRenderer_Color(MeshRenderer target_MeshRender, float lerpDuration, Color startLerp, Color targetLerp)
+    {
+        float lerpStart_Time = Time.time;
+        float lerpProgress;
+        bool lerping = true;
+        while (lerping)
+        {
+            yield return new WaitForEndOfFrame();
+            lerpProgress = Time.time - lerpStart_Time;
+            if (target_MeshRender != null)
+            {
+                target_MeshRender.material.color = Color.Lerp(startLerp, targetLerp, lerpProgress / lerpDuration);
+            }
+            else
+            {
+                lerping = false;
+            }
+
+
+            if (lerpProgress >= lerpDuration)
+            {
+                lerping = false;
+            }
+        }
+        yield break;
+    }
+
+
+    IEnumerator FadeIn()
+    {
+        Debug.Log("FadeIn-Coroutine started");
+        for (float f= 0.05f; f<=1; f+= 0.05f)
+        {
+            Color c = displayRend.material.color;
+            c.a = f;
+            displayRend.material.color = c;
+            Debug.Log("FadeIn-Coroutine f: " + f);
+        }
+        yield return new WaitForSeconds(0.05f);
+    }
+
+    IEnumerator FadeOut()
+    {
+        Debug.Log("FadeOut-Coroutine started");
+        for (float f = 1.0f; f >= 0; f -= 0.05f)
+        {
+            Color c = displayRend.material.color;
+            c.a = f;
+            displayRend.material.color = c;
+            Debug.Log("FadeOut-Coroutine f: " + f);
+        }
+        yield return new WaitForSeconds(0.05f);
+    }
+
+    IEnumerator Fade()
+    {
+        for (float f = 1f; f >= 0; f -= 0.1f)
+        {
+            Color c = displayRend.material.color;
+            c.a = f;
+            displayRend.material.color = c;
+            yield return null;
+        }
+    }
 }
 
 
