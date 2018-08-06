@@ -66,7 +66,7 @@ public class ShowDisplay : MonoBehaviour {
                 comp.GetComponent<Renderer>().material.color = displayCol;
             }
         }
-
+ 
 
         // instanciate distance --> just for unity :-)
         distance = 1000f;
