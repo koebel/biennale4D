@@ -38,12 +38,19 @@ public class ShowDisplay : MonoBehaviour
     private float updateFrequence;
 
     private Color displayCol;
-    private Color markerCol;
     private Color markerMaterialCol;
     private Color markerMaterialActiveCol;
     private Color currentColor;
-    private Color textCol;
+    public Color textCol;
+    public Color textActiveCol;
+    private Color currentTextColor;
     private float textOpacity = 0.8f;
+
+    /*
+    private Transform platform;
+    private Transform circle;
+    private Transform outerCircle;
+    */
 
     // Use this for initialization
     void Start()
@@ -86,9 +93,11 @@ public class ShowDisplay : MonoBehaviour
 
         if (hasMarker) {
             // define colors
-            markerCol = marker.GetComponent<Renderer>().material.color;
             markerMaterialCol = markerMaterial.color;
             markerMaterialActiveCol = markerMaterialActive.color;
+
+            textCol.a = textOpacity;
+            textActiveCol.a = textOpacity;
 
             // set marker material
             if (isOutside)
@@ -102,11 +111,25 @@ public class ShowDisplay : MonoBehaviour
 
             // set marker text
             markerText.text = year;
-            textCol = markerText.material.color;
-            textCol.a = textOpacity;
             markerText.material.color = textCol;
         }
-        
+
+        /*
+        // get circles
+        platform = collider.transform.parent;
+        circle = transform.Find("MarkerCanvas/Circle");
+        outerCircle = transform.Find("MarkerCanvas/OuterCircle");
+
+        if (circle != null)
+        {
+            Debug.Log("found circle");
+        }
+        else
+        {
+            Debug.Log("circle not found");
+        }
+        */
+
 
         // instanciate distance --> just for unity :-)
         distance = 1000f;
@@ -145,13 +168,14 @@ public class ShowDisplay : MonoBehaviour
 
             if (hasMarker) {
                 // change color of marker object
-                StartCoroutine(LerpColor(speed, markerMaterialActiveCol));
-                //markerText.color = markerMaterialCol;
+                StartCoroutine(LerpColor(marker, markerMaterialActiveCol, speed));
+                StartCoroutine(LerpText(textActiveCol, speed));
+                //StartCoroutine(LerpColor(circle.gameObject, markerMaterialActiveCol, speed));
+                //StartCoroutine(LerpColor(outerCircle.gameObject, markerMaterialActiveCol, speed));
             }
+        }
 
-            }
-
-            if (!isOutside && distance > radius)
+        if (!isOutside && distance > radius)
         {
             isOutside = true;
             StopAllCoroutines();
@@ -175,8 +199,10 @@ public class ShowDisplay : MonoBehaviour
 
             if (hasMarker) {
                 // change color of marker object
-                StartCoroutine(LerpColor(speed, markerMaterialCol));
-                //markerText.color = markerMaterialActiveCol;
+                StartCoroutine(LerpColor(marker, markerMaterialCol, speed));
+                StartCoroutine(LerpText(textCol, speed));
+                //StartCoroutine(LerpColor(circle.gameObject, markerMaterialCol, speed));
+                //StartCoroutine(LerpColor(outerCircle.gameObject, markerMaterialCol, speed));
             }
         }
     }
@@ -264,19 +290,37 @@ public class ShowDisplay : MonoBehaviour
     }
 
 
-    IEnumerator LerpColor(float time, Color targetColor)
+    IEnumerator LerpColor(GameObject obj, Color targetColor, float time)
     {
         Debug.Log("LerpColor-Coroutine started");
 
         // get current color of material
-        Color c = marker.GetComponent<Renderer>().material.color;
+        Color c = obj.GetComponent<Renderer>().material.color;
 
         float progress = 0;
         float increment = 1 / (time * frequence);
         while (progress < 1)
         {
             currentColor = Color.Lerp(c, targetColor, progress);
-            marker.GetComponent<Renderer>().material.color = currentColor;
+            obj.GetComponent<Renderer>().material.color = currentColor;
+            progress += increment;
+            yield return new WaitForSeconds(updateFrequence);
+        }
+    }
+
+    IEnumerator LerpText(Color targetColor, float time)
+    {
+        Debug.Log("LerpText-Coroutine started");
+
+        // get current color of material
+        Color c = markerText.material.color;
+
+        float progress = 0;
+        float increment = 1 / (time * frequence);
+        while (progress < 1)
+        {
+            currentTextColor = Color.Lerp(c, targetColor, progress);
+            markerText.material.color = currentTextColor;
             progress += increment;
             yield return new WaitForSeconds(updateFrequence);
         }
