@@ -18,7 +18,8 @@ public class ShowDisplay : MonoBehaviour
     public GameObject collider;
     public float radius = 2.0f;
     public float speed = 1.0f;
-    
+
+    public bool hasMarker = true;
     public GameObject marker;
     public Material markerMaterial;
     public Material markerMaterialActive;
@@ -42,6 +43,7 @@ public class ShowDisplay : MonoBehaviour
     private Color markerMaterialActiveCol;
     private Color currentColor;
     private Color textCol;
+    private float textOpacity = 0.85f;
 
     // Use this for initialization
     void Start()
@@ -82,30 +84,29 @@ public class ShowDisplay : MonoBehaviour
             }
         }
 
+        if (hasMarker) {
+            // define colors
+            markerCol = marker.GetComponent<Renderer>().material.color;
+            markerMaterialCol = markerMaterial.color;
+            markerMaterialActiveCol = markerMaterialActive.color;
 
-        // define colors
-        markerCol = marker.GetComponent<Renderer>().material.color;
-        markerMaterialCol = markerMaterial.color;
-        markerMaterialActiveCol = markerMaterialActive.color;
+            // set marker material
+            if (isOutside)
+            {
+                marker.GetComponent<Renderer>().material = markerMaterial;
+            }
+            else
+            {
+                marker.GetComponent<Renderer>().material = markerMaterialActive;
+            }
 
-
-        // set marker material
-        if (isOutside)
-        {
-            marker.GetComponent<Renderer>().material = markerMaterial;
+            // set marker text
+            markerText.text = year;
+            textCol = markerText.material.color;
+            textCol.a = textOpacity;
+            markerText.material.color = textCol;
         }
-        else
-        {
-            marker.GetComponent<Renderer>().material = markerMaterialActive;
-        }
-
-
-        // set marker text
-        markerText.text = year;
-        textCol = markerText.GetComponent<Renderer>().material.color;
-        textCol.a = 0.3f;
-        markerText.GetComponent<Renderer>().material.color = textCol;
-
+        
 
         // instanciate distance --> just for unity :-)
         distance = 1000f;
@@ -142,12 +143,15 @@ public class ShowDisplay : MonoBehaviour
                 }
             }
 
-            // change color of marker object
-            StartCoroutine(LerpColor(speed, markerMaterialActiveCol));
-            //markerText.color = markerMaterialCol;
-        }
+            if (hasMarker) {
+                // change color of marker object
+                StartCoroutine(LerpColor(speed, markerMaterialActiveCol));
+                //markerText.color = markerMaterialCol;
+            }
 
-        if (!isOutside && distance > radius)
+            }
+
+            if (!isOutside && distance > radius)
         {
             isOutside = true;
             StopAllCoroutines();
@@ -169,9 +173,11 @@ public class ShowDisplay : MonoBehaviour
                 }
             }
 
-            // change color of marker object
-            StartCoroutine(LerpColor(speed, markerMaterialCol));
-            //markerText.color = markerMaterialActiveCol;
+            if (hasMarker) {
+                // change color of marker object
+                StartCoroutine(LerpColor(speed, markerMaterialCol));
+                //markerText.color = markerMaterialActiveCol;
+            }
         }
     }
 

@@ -12996,6 +12996,7 @@ MonoBehaviour:
   collider: {fileID: 0}
   radius: 1
   speed: 0.5
+  hasMarker: 1
   marker: {fileID: 1017334509}
   markerMaterial: {fileID: 0}
   markerMaterialActive: {fileID: 0}
@@ -21842,6 +21843,7 @@ MonoBehaviour:
   collider: {fileID: 1048665208}
   radius: 0.7
   speed: 0.5
+  hasMarker: 1
   marker: {fileID: 452664651}
   markerMaterial: {fileID: 2100000, guid: 5cd6015e5b071f344bdeba4b76ee9436, type: 2}
   markerMaterialActive: {fileID: 2100000, guid: d5c891e8407ec454b8ee5ce7aa2837e0,
@@ -34267,6 +34269,7 @@ MonoBehaviour:
   collider: {fileID: 0}
   radius: 0.5
   speed: 2.5
+  hasMarker: 1
   marker: {fileID: 1719539161}
   markerMaterial: {fileID: 0}
   markerMaterialActive: {fileID: 0}
@@ -36091,6 +36094,7 @@ MonoBehaviour:
   collider: {fileID: 0}
   radius: 1
   speed: 0.5
+  hasMarker: 1
   marker: {fileID: 482417409}
   markerMaterial: {fileID: 0}
   markerMaterialActive: {fileID: 0}
@@ -39689,7 +39693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.54901963}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
