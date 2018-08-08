@@ -43,7 +43,7 @@ public class ShowDisplay : MonoBehaviour
     private Color markerMaterialActiveCol;
     private Color currentColor;
     private Color textCol;
-    private float textOpacity = 0.85f;
+    private float textOpacity = 0.8f;
 
     // Use this for initialization
     void Start()
