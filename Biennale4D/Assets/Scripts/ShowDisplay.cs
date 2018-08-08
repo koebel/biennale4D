@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 /*
@@ -12,17 +13,17 @@ using System.Collections;
 
 public class ShowDisplay : MonoBehaviour
 {
-
+    public GameObject display;
+    public bool isVisibleAtStart = false;
+    public GameObject collider;
     public float radius = 2.0f;
     public float speed = 1.0f;
-    public bool isVisibleAtStart = false;
-    public GameObject display;
-    public GameObject collider;
+    
     public GameObject marker;
-
     public Material markerMaterial;
     public Material markerMaterialActive;
-    //public Text markerText;
+    public Text markerText;
+    public string year;
 
     private Transform[] displayComponents;
 
@@ -40,6 +41,7 @@ public class ShowDisplay : MonoBehaviour
     private Color markerMaterialCol;
     private Color markerMaterialActiveCol;
     private Color currentColor;
+    private Color textCol;
 
     // Use this for initialization
     void Start()
@@ -98,6 +100,13 @@ public class ShowDisplay : MonoBehaviour
         }
 
 
+        // set marker text
+        markerText.text = year;
+        textCol = markerText.GetComponent<Renderer>().material.color;
+        textCol.a = 0.3f;
+        markerText.GetComponent<Renderer>().material.color = textCol;
+
+
         // instanciate distance --> just for unity :-)
         distance = 1000f;
     }
@@ -135,6 +144,7 @@ public class ShowDisplay : MonoBehaviour
 
             // change color of marker object
             StartCoroutine(LerpColor(speed, markerMaterialActiveCol));
+            //markerText.color = markerMaterialCol;
         }
 
         if (!isOutside && distance > radius)
@@ -161,6 +171,7 @@ public class ShowDisplay : MonoBehaviour
 
             // change color of marker object
             StartCoroutine(LerpColor(speed, markerMaterialCol));
+            //markerText.color = markerMaterialActiveCol;
         }
     }
 
