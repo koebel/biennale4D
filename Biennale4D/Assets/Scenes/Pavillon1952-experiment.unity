@@ -114,6 +114,84 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: fda7e962bfe725244bfbe165de7d287d, type: 2}
+--- !u!1 &3477409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1000013010469950, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 3477410}
+  - component: {fileID: 3477412}
+  - component: {fileID: 3477411}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &3477410
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224000011521819134, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 3477409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1672888819}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3477411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000011550058760, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 3477409}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.91764706, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 35876dee812942948a32b14304a36aac, type: 3}
+    m_FontSize: 200
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 200
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 1999
+--- !u!222 &3477412
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222000013892404212, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 3477409}
 --- !u!1 &4627984
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,8 +204,8 @@ GameObject:
   - component: {fileID: 4627987}
   - component: {fileID: 4627986}
   m_Layer: 0
-  m_Name: Outline Top Middle Left (1)
-  m_TagString: Untagged
+  m_Name: Outline Top Middle Left
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -322,7 +400,7 @@ GameObject:
   - component: {fileID: 8878724}
   m_Layer: 0
   m_Name: Outline Bottom Right Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -408,7 +486,7 @@ GameObject:
   - component: {fileID: 9927268}
   m_Layer: 0
   m_Name: Outline Pillar Front Left Top Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1054,7 +1132,7 @@ GameObject:
   - component: {fileID: 48193293}
   m_Layer: 0
   m_Name: Outline Bottom Left Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1237,7 +1315,7 @@ GameObject:
   - component: {fileID: 56319890}
   m_Layer: 0
   m_Name: Outline Bottom Back Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1408,7 +1486,7 @@ GameObject:
   - component: {fileID: 66288270}
   m_Layer: 0
   m_Name: Outline Pillar Divider Front Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1659,6 +1737,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 95303380}
+  - component: {fileID: 95303383}
+  - component: {fileID: 95303382}
+  - component: {fileID: 95303381}
   m_Layer: 0
   m_Name: 'Platform '
   m_TagString: Untagged
@@ -1676,12 +1757,151 @@ Transform:
   m_LocalPosition: {x: 0.32, y: 0.55, z: 1.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1778176008}
+  - {fileID: 1672888819}
   - {fileID: 1359746091}
   - {fileID: 452664652}
   - {fileID: 1048665209}
+  - {fileID: 536780172}
   m_Father: {fileID: 1125105691}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -15, z: 0}
+--- !u!64 &95303381
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95303379}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 5eb1c047687a0a449a866c1cb931ff1f, type: 3}
+--- !u!23 &95303382
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95303379}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &95303383
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95303379}
+  m_Mesh: {fileID: 4300000, guid: 5eb1c047687a0a449a866c1cb931ff1f, type: 3}
+--- !u!1 &99676173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1000013010469950, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 99676174}
+  - component: {fileID: 99676176}
+  - component: {fileID: 99676175}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &99676174
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224000011521819134, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 99676173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 695408624}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5, y: 0}
+  m_SizeDelta: {x: 880, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &99676175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000011550058760, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 99676173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 35876dee812942948a32b14304a36aac, type: 3}
+    m_FontSize: 36
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 82
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 0.95
+  m_Text: 'Biennale 1952
+
+    Bilder von Max Gubler, Foto von Max Muster'
+--- !u!222 &99676176
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222000013892404212, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 99676173}
 --- !u!1 &104851746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1695,7 +1915,7 @@ GameObject:
   - component: {fileID: 104851748}
   m_Layer: 0
   m_Name: Outline Top Back Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1866,7 +2086,7 @@ GameObject:
   - component: {fileID: 106930611}
   m_Layer: 0
   m_Name: Outline Pillar Divider Back Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1952,7 +2172,7 @@ GameObject:
   - component: {fileID: 107154694}
   m_Layer: 0
   m_Name: Outline Bottom Doorframe Left Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2123,7 +2343,7 @@ GameObject:
   - component: {fileID: 109197140}
   m_Layer: 0
   m_Name: Outline Top Pillar Front Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2209,7 +2429,7 @@ GameObject:
   - component: {fileID: 111153226}
   m_Layer: 0
   m_Name: Outline Side Step3 Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2709,7 +2929,7 @@ GameObject:
   - component: {fileID: 134292188}
   m_Layer: 0
   m_Name: Outline Top Left Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2795,7 +3015,7 @@ GameObject:
   - component: {fileID: 135219121}
   m_Layer: 0
   m_Name: Outline Pillar Back Right Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2967,7 +3187,7 @@ GameObject:
   - component: {fileID: 145012130}
   m_Layer: 0
   m_Name: Outline Pillar Divider Front Left (1)
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3053,7 +3273,7 @@ GameObject:
   - component: {fileID: 145445319}
   m_Layer: 0
   m_Name: Outline Pillar Back Left Top
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5073,7 +5293,7 @@ GameObject:
   - component: {fileID: 170213790}
   m_Layer: 0
   m_Name: Outline Bottom Front Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5244,7 +5464,7 @@ GameObject:
   - component: {fileID: 180773837}
   m_Layer: 0
   m_Name: Outline Pillar Front Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5554,7 +5774,7 @@ GameObject:
   - component: {fileID: 210691845}
   m_Layer: 0
   m_Name: Outline Bottom Doorframe Left Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5981,7 +6201,7 @@ GameObject:
   - component: {fileID: 227181909}
   m_Layer: 0
   m_Name: Outline Pillar Front Right Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6141,6 +6361,38 @@ Transform:
   m_Father: {fileID: 1643012875}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &236654543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 236654544}
+  m_Layer: 0
+  m_Name: Rahmen (V1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &236654544
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 236654543}
+  m_LocalRotation: {x: 0.7025614, y: -0.080046766, z: 0.080046766, w: 0.7025614}
+  m_LocalPosition: {x: -1.8, y: 2, z: 1.8}
+  m_LocalScale: {x: 1.2500002, y: 1.2499998, z: 1.25}
+  m_Children:
+  - {fileID: 1412146767}
+  - {fileID: 882761932}
+  - {fileID: 1947199901}
+  - {fileID: 1600172382}
+  m_Father: {fileID: 1098957713}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 90, y: -13, z: 0}
 --- !u!1 &238207102
 GameObject:
   m_ObjectHideFlags: 0
@@ -6154,7 +6406,7 @@ GameObject:
   - component: {fileID: 238207104}
   m_Layer: 0
   m_Name: Outline Bottom Front Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6386,8 +6638,8 @@ GameObject:
   - component: {fileID: 253857583}
   - component: {fileID: 253857582}
   m_Layer: 0
-  m_Name: Outline Top Middle Front (1)
-  m_TagString: Untagged
+  m_Name: Outline Top Middle Front
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6473,7 +6725,7 @@ GameObject:
   - component: {fileID: 265728848}
   m_Layer: 0
   m_Name: Outline Top Step4
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6645,7 +6897,7 @@ GameObject:
   - component: {fileID: 278560146}
   m_Layer: 0
   m_Name: Outline Pillar Divider Back Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6908,7 +7160,7 @@ GameObject:
   - component: {fileID: 301930850}
   m_Layer: 0
   m_Name: Outline Bottom Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7292,7 +7544,7 @@ GameObject:
   - component: {fileID: 333423699}
   m_Layer: 0
   m_Name: Outline Top Left over Entrance
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7463,7 +7715,7 @@ GameObject:
   - component: {fileID: 337602122}
   m_Layer: 0
   m_Name: Outline Top Left Right Short
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7635,7 +7887,7 @@ GameObject:
   - component: {fileID: 342693527}
   m_Layer: 0
   m_Name: Outline Top Right Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8156,7 +8408,7 @@ GameObject:
   - component: {fileID: 378974234}
   m_Layer: 0
   m_Name: Outline Top Front Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8242,7 +8494,7 @@ GameObject:
   - component: {fileID: 385149141}
   m_Layer: 0
   m_Name: Outline Top Pillar Back Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8500,7 +8752,7 @@ GameObject:
   - component: {fileID: 397700551}
   m_Layer: 0
   m_Name: Outline Pillar Front Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8586,7 +8838,7 @@ GameObject:
   - component: {fileID: 401120872}
   m_Layer: 0
   m_Name: Outline Bottom Divider Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8757,7 +9009,7 @@ GameObject:
   - component: {fileID: 406833310}
   m_Layer: 0
   m_Name: Outline Top Left Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8843,7 +9095,7 @@ GameObject:
   - component: {fileID: 411307837}
   m_Layer: 0
   m_Name: Outline Top Front Half
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9038,7 +9290,7 @@ GameObject:
   - component: {fileID: 413738347}
   m_Layer: 0
   m_Name: Outline Top Divider Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9124,7 +9376,7 @@ GameObject:
   - component: {fileID: 415112789}
   m_Layer: 0
   m_Name: Outline Bottom Doorframe Right Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9331,7 +9583,7 @@ GameObject:
   - component: {fileID: 417669820}
   m_Layer: 0
   m_Name: Outline Side Step2 Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9417,7 +9669,7 @@ GameObject:
   - component: {fileID: 421886523}
   m_Layer: 0
   m_Name: Outline Bottom Divider Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9503,7 +9755,7 @@ GameObject:
   - component: {fileID: 425126369}
   m_Layer: 0
   m_Name: Outline Pillar Front Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9870,7 +10122,7 @@ GameObject:
   - component: {fileID: 448364625}
   m_Layer: 0
   m_Name: Outline Side Step4 Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10041,7 +10293,7 @@ GameObject:
   - component: {fileID: 451549967}
   m_Layer: 0
   m_Name: Outline Top Doorframe Left Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10140,10 +10392,10 @@ Transform:
   m_GameObject: {fileID: 452664651}
   m_LocalRotation: {x: -0, y: 0.13052624, z: -0, w: 0.9914449}
   m_LocalPosition: {x: 0, y: -0.34, z: 0}
-  m_LocalScale: {x: 1.2, y: 0.2, z: 1.2}
+  m_LocalScale: {x: 1.4, y: 0.2, z: 1.4}
   m_Children: []
   m_Father: {fileID: 95303380}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &452664653
 CapsuleCollider:
@@ -10213,7 +10465,7 @@ GameObject:
   - component: {fileID: 454350842}
   m_Layer: 0
   m_Name: Outline Bottom Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10429,7 +10681,7 @@ GameObject:
   - component: {fileID: 467317824}
   m_Layer: 0
   m_Name: Outline Pillar PreFront Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10699,7 +10951,7 @@ GameObject:
   - component: {fileID: 476361466}
   m_Layer: 0
   m_Name: Outline Pillar Back Right Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10871,7 +11123,7 @@ GameObject:
   - component: {fileID: 485383859}
   m_Layer: 0
   m_Name: Outline Top Doorframe
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10957,7 +11209,7 @@ GameObject:
   - component: {fileID: 487082393}
   m_Layer: 0
   m_Name: Outline Top Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11077,7 +11329,7 @@ GameObject:
   - component: {fileID: 497613705}
   m_Layer: 0
   m_Name: Outline Top Back Short
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11162,7 +11414,7 @@ GameObject:
   - component: {fileID: 513980712}
   - component: {fileID: 513980711}
   m_Layer: 0
-  m_Name: rahmen left
+  m_Name: rahmen top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11543,6 +11795,126 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &536780171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 536780172}
+  - component: {fileID: 536780173}
+  m_Layer: 0
+  m_Name: circle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &536780172
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 536780171}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 95303380}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!120 &536780173
+LineRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 536780171}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 28bb0e600244c8a4181bcf69514c5716, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  m_Parameters:
+    serializedVersion: 2
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    generateLightingData: 0
+  m_UseWorldSpace: 1
+  m_Loop: 1
 --- !u!1 &537485413
 GameObject:
   m_ObjectHideFlags: 0
@@ -11819,6 +12191,7 @@ Transform:
   - {fileID: 1502660938}
   - {fileID: 513980710}
   - {fileID: 2021101739}
+  - {fileID: 1459860251}
   m_Father: {fileID: 1098957713}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: -13, z: 0}
@@ -11835,7 +12208,7 @@ GameObject:
   - component: {fileID: 559279981}
   m_Layer: 0
   m_Name: Outline Top Back Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12245,7 +12618,7 @@ GameObject:
   - component: {fileID: 594694256}
   m_Layer: 0
   m_Name: Outline Top Doorframe Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12331,7 +12704,7 @@ GameObject:
   - component: {fileID: 597310307}
   m_Layer: 0
   m_Name: Outline Top Doorframe Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12417,7 +12790,7 @@ GameObject:
   - component: {fileID: 601014972}
   m_Layer: 0
   m_Name: Outline Pillar Front Left Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12503,7 +12876,7 @@ GameObject:
   - component: {fileID: 602438506}
   m_Layer: 0
   m_Name: Outline Pillar Back Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12622,7 +12995,10 @@ MonoBehaviour:
   speed: 0.5
   isVisibleAtStart: 0
   display: {fileID: 1643613493}
+  collider: {fileID: 0}
   marker: {fileID: 1017334509}
+  markerMaterial: {fileID: 0}
+  markerMaterialActive: {fileID: 0}
 --- !u!1 &608094573
 GameObject:
   m_ObjectHideFlags: 0
@@ -12636,7 +13012,7 @@ GameObject:
   - component: {fileID: 608094575}
   m_Layer: 0
   m_Name: Outline Pillar Back Door Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12722,7 +13098,7 @@ GameObject:
   - component: {fileID: 609590547}
   m_Layer: 0
   m_Name: Outline Bottom Back Middle
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12949,7 +13325,7 @@ GameObject:
   - component: {fileID: 634203819}
   m_Layer: 0
   m_Name: Outline Bottom Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13121,7 +13497,7 @@ GameObject:
   - component: {fileID: 644619942}
   m_Layer: 0
   m_Name: Outline Pillar Step3 Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13207,7 +13583,7 @@ GameObject:
   - component: {fileID: 649422870}
   m_Layer: 0
   m_Name: Outline Top Doorframe Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13448,7 +13824,7 @@ GameObject:
   - component: {fileID: 669973034}
   m_Layer: 0
   m_Name: Outline Bottom Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13566,7 +13942,7 @@ GameObject:
   - component: {fileID: 679213502}
   m_Layer: 0
   m_Name: 'Outline Pillar Step2 Right '
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13652,7 +14028,7 @@ GameObject:
   - component: {fileID: 695154674}
   m_Layer: 0
   m_Name: Outline Pillar Step1 Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13810,6 +14186,105 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 695215916}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &695408623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1000010537168624, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 695408624}
+  - component: {fileID: 695408627}
+  - component: {fileID: 695408626}
+  - component: {fileID: 695408625}
+  m_Layer: 5
+  m_Name: UI Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &695408624
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224000014175631142, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 695408623}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.0010884354, y: 0.007999998, z: 0.04}
+  m_Children:
+  - {fileID: 99676174}
+  m_Father: {fileID: 1459860251}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1, y: 0}
+  m_SizeDelta: {x: 880, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &695408625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000010649001456, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 695408623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &695408626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000013098199044, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 695408623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &695408627
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 223000012158163732, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 695408623}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &706105393
 GameObject:
   m_ObjectHideFlags: 0
@@ -13823,7 +14298,7 @@ GameObject:
   - component: {fileID: 706105395}
   m_Layer: 0
   m_Name: Outline Pillar Step3 Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14009,7 +14484,7 @@ GameObject:
   - component: {fileID: 720203623}
   m_Layer: 0
   m_Name: Outline Top Back Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14095,7 +14570,7 @@ GameObject:
   - component: {fileID: 721560637}
   m_Layer: 0
   m_Name: Outline Top Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14366,7 +14841,7 @@ GameObject:
   - component: {fileID: 749291710}
   m_Layer: 0
   m_Name: Outline Top Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14538,7 +15013,7 @@ GameObject:
   - component: {fileID: 757084594}
   m_Layer: 0
   m_Name: Outline Pillar Divider Front Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14624,7 +15099,7 @@ GameObject:
   - component: {fileID: 759399659}
   m_Layer: 0
   m_Name: Outline Pillar Front Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14795,7 +15270,7 @@ GameObject:
   - component: {fileID: 762872580}
   m_Layer: 0
   m_Name: 'Outline Bottom Left '
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14967,7 +15442,7 @@ GameObject:
   - component: {fileID: 773188603}
   m_Layer: 0
   m_Name: Outline Bottom Back Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15053,7 +15528,7 @@ GameObject:
   - component: {fileID: 777364721}
   m_Layer: 0
   m_Name: Outline Bottom Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15139,7 +15614,7 @@ GameObject:
   - component: {fileID: 783322056}
   m_Layer: 0
   m_Name: Outline Bottom Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15310,7 +15785,7 @@ GameObject:
   - component: {fileID: 791668387}
   m_Layer: 0
   m_Name: Outline Top Top Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15871,7 +16346,7 @@ GameObject:
   - component: {fileID: 824690398}
   m_Layer: 0
   m_Name: Outline Bottom Back Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15957,7 +16432,7 @@ GameObject:
   - component: {fileID: 825220965}
   m_Layer: 0
   m_Name: Outline Pillar Front Door Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16226,7 +16701,7 @@ GameObject:
   - component: {fileID: 841990969}
   m_Layer: 0
   m_Name: Outline Pillar Back Left Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16397,7 +16872,7 @@ GameObject:
   - component: {fileID: 848149581}
   m_Layer: 0
   m_Name: Outline Top Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16612,7 +17087,7 @@ GameObject:
   - component: {fileID: 861357730}
   m_Layer: 0
   m_Name: Outline Top Left Short
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16698,7 +17173,7 @@ GameObject:
   - component: {fileID: 870005323}
   m_Layer: 0
   m_Name: Outline Bottom Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16784,7 +17259,7 @@ GameObject:
   - component: {fileID: 870222141}
   m_Layer: 0
   m_Name: Outline Bottom Back Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16967,6 +17442,91 @@ Transform:
   m_Father: {fileID: 488346841}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &882761931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 882761932}
+  - component: {fileID: 882761935}
+  - component: {fileID: 882761934}
+  - component: {fileID: 882761933}
+  m_Layer: 0
+  m_Name: rahmen bottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &882761932
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882761931}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.35525, z: 0}
+  m_LocalScale: {x: 0.02, y: 0.0245, z: 0.5700007}
+  m_Children: []
+  m_Father: {fileID: 236654544}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &882761933
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882761931}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &882761934
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882761931}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &882761935
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882761931}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &884137736
 GameObject:
   m_ObjectHideFlags: 0
@@ -17065,7 +17625,7 @@ GameObject:
   - component: {fileID: 885751147}
   m_Layer: 0
   m_Name: Outline Pillar Back Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17201,7 +17761,7 @@ GameObject:
   - component: {fileID: 893530244}
   m_Layer: 0
   m_Name: Outline Bottom Steps Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17543,7 +18103,7 @@ GameObject:
   - component: {fileID: 908164507}
   m_Layer: 0
   m_Name: Outline Top Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17629,7 +18189,7 @@ GameObject:
   - component: {fileID: 908800167}
   m_Layer: 0
   m_Name: Outline Pillar Front Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17715,7 +18275,7 @@ GameObject:
   - component: {fileID: 913009827}
   m_Layer: 0
   m_Name: Outline Top Top Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17887,7 +18447,7 @@ GameObject:
   - component: {fileID: 918900332}
   m_Layer: 0
   m_Name: Outline Bottom Left Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18111,7 +18671,7 @@ GameObject:
   - component: {fileID: 921573387}
   m_Layer: 0
   m_Name: Outline Bottom Left Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18197,7 +18757,7 @@ GameObject:
   - component: {fileID: 922728365}
   m_Layer: 0
   m_Name: Outline Pillar Back Door Grafik
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18313,7 +18873,7 @@ GameObject:
   - component: {fileID: 938475820}
   m_Layer: 0
   m_Name: Outline Pillar Back Right Top
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18399,7 +18959,7 @@ GameObject:
   - component: {fileID: 939884530}
   m_Layer: 0
   m_Name: Outline Bottom Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19007,7 +19567,7 @@ GameObject:
   - component: {fileID: 966809794}
   m_Layer: 0
   m_Name: Outline Pillar Step4 Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19178,7 +19738,7 @@ GameObject:
   - component: {fileID: 979061506}
   m_Layer: 0
   m_Name: Outline Pillar PreFront Left (1)
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19264,7 +19824,7 @@ GameObject:
   - component: {fileID: 994714621}
   m_Layer: 0
   m_Name: Outline Top Step1
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19435,7 +19995,7 @@ GameObject:
   - component: {fileID: 1002726436}
   m_Layer: 0
   m_Name: Outline Top Back Right (1)
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19521,7 +20081,7 @@ GameObject:
   - component: {fileID: 1005789916}
   m_Layer: 0
   m_Name: Outline Top Front Short
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19778,7 +20338,7 @@ GameObject:
   - component: {fileID: 1028537277}
   m_Layer: 0
   m_Name: Outline Pillar Back Door
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20047,11 +20607,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1048665208}
   m_LocalRotation: {x: -0, y: 0.13052624, z: -0, w: 0.9914449}
-  m_LocalPosition: {x: 0, y: 1.7, z: 0}
-  m_LocalScale: {x: 1.2, y: 2, z: 1.2}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 1.4, y: 2.8, z: 1.4}
   m_Children: []
   m_Father: {fileID: 95303380}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1048665210
 CapsuleCollider:
@@ -20189,7 +20749,7 @@ GameObject:
   - component: {fileID: 1063402362}
   m_Layer: 0
   m_Name: Outline Pillar Back Right Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20361,7 +20921,7 @@ GameObject:
   - component: {fileID: 1065089022}
   m_Layer: 0
   m_Name: Outline Pillar Front Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20533,7 +21093,7 @@ GameObject:
   - component: {fileID: 1065782099}
   m_Layer: 0
   m_Name: Outline Bottom Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20619,7 +21179,7 @@ GameObject:
   - component: {fileID: 1094165622}
   m_Layer: 0
   m_Name: Outline Top Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20795,9 +21355,88 @@ Transform:
   m_Children:
   - {fileID: 1719539162}
   - {fileID: 557570825}
+  - {fileID: 236654544}
   m_Father: {fileID: 1683326979}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1101635036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1000013010469950, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1101635037}
+  - component: {fileID: 1101635039}
+  - component: {fileID: 1101635038}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1101635037
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224000011521819134, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1101635036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1446627757}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5, y: 0}
+  m_SizeDelta: {x: 880, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1101635038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000011550058760, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1101635036}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 35876dee812942948a32b14304a36aac, type: 3}
+    m_FontSize: 36
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 82
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 0.95
+  m_Text: 
+--- !u!222 &1101635039
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222000013892404212, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1101635036}
 --- !u!1 &1105292335
 GameObject:
   m_ObjectHideFlags: 0
@@ -20811,7 +21450,7 @@ GameObject:
   - component: {fileID: 1105292337}
   m_Layer: 0
   m_Name: Outline Top Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20897,7 +21536,7 @@ GameObject:
   - component: {fileID: 1114365001}
   m_Layer: 0
   m_Name: Outline Pillar Divider Front Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20983,7 +21622,7 @@ GameObject:
   - component: {fileID: 1121587661}
   m_Layer: 0
   m_Name: Outline Top Middle Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21162,13 +21801,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1125105691}
   - component: {fileID: 1125105692}
+  - component: {fileID: 1125105693}
   m_Layer: 0
   m_Name: Photo Billboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1125105691
 Transform:
   m_ObjectHideFlags: 0
@@ -21195,11 +21835,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf887ba08f58254e8b3ca4ddedeb9c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
+  radius: 0.7
   speed: 0.5
   isVisibleAtStart: 0
   display: {fileID: 467875119}
-  marker: {fileID: 1048665208}
+  collider: {fileID: 1048665208}
+  marker: {fileID: 452664651}
+  markerMaterial: {fileID: 2100000, guid: 5cd6015e5b071f344bdeba4b76ee9436, type: 2}
+  markerMaterialActive: {fileID: 2100000, guid: 3d41b90b480e7481da3b180052a44f97,
+    type: 2}
+--- !u!114 &1125105693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125105690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0d67dcf8e5b64448e37fc50f56f1ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerCanvas: {fileID: 1672888818}
+  materialOutline: {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
+  radius: 0.7
+  linewidth: 0.035
 --- !u!1 &1137791396
 GameObject:
   m_ObjectHideFlags: 0
@@ -21298,7 +21957,7 @@ GameObject:
   - component: {fileID: 1138370622}
   - component: {fileID: 1138370621}
   m_Layer: 0
-  m_Name: rahmen top
+  m_Name: rahmen right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21384,7 +22043,7 @@ GameObject:
   - component: {fileID: 1139496521}
   m_Layer: 0
   m_Name: Outline Top Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21610,7 +22269,7 @@ GameObject:
   - component: {fileID: 1147683611}
   m_Layer: 0
   m_Name: Outline Pillar Step4 Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21781,7 +22440,7 @@ GameObject:
   - component: {fileID: 1151817907}
   m_Layer: 0
   m_Name: Outline Pillar PreFront Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22081,7 +22740,7 @@ GameObject:
   - component: {fileID: 1161758242}
   m_Layer: 0
   m_Name: Outline Pillar Front Door Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22167,7 +22826,7 @@ GameObject:
   - component: {fileID: 1162936267}
   m_Layer: 0
   m_Name: Outline Pillar Front Door Grafik
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22512,7 +23171,7 @@ GameObject:
   - component: {fileID: 1178302887}
   m_Layer: 0
   m_Name: Outline Top Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22757,7 +23416,7 @@ GameObject:
   - component: {fileID: 1220779726}
   m_Layer: 0
   m_Name: Outline Pillar Entrance Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22843,7 +23502,7 @@ GameObject:
   - component: {fileID: 1240482284}
   m_Layer: 0
   m_Name: Outline Bottom Right Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23155,7 +23814,7 @@ GameObject:
   - component: {fileID: 1256366021}
   m_Layer: 0
   m_Name: Outline Pillar Back Door Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23343,7 +24002,7 @@ GameObject:
   - component: {fileID: 1263682016}
   m_Layer: 0
   m_Name: Outline Pillar Back Left Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23429,7 +24088,7 @@ GameObject:
   - component: {fileID: 1267913671}
   m_Layer: 0
   m_Name: Outline Pillar Front Door
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23515,7 +24174,7 @@ GameObject:
   - component: {fileID: 1270493294}
   m_Layer: 0
   m_Name: Outline Top Front Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23634,7 +24293,7 @@ GameObject:
   - component: {fileID: 1280090735}
   m_Layer: 0
   m_Name: Outline Pillar Back Left Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23806,7 +24465,7 @@ GameObject:
   - component: {fileID: 1289618691}
   m_Layer: 0
   m_Name: Outline Pillar Step1 Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23892,7 +24551,7 @@ GameObject:
   - component: {fileID: 1289651851}
   m_Layer: 0
   m_Name: Outline Bottom Back Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24063,8 +24722,8 @@ GameObject:
   - component: {fileID: 1292693813}
   - component: {fileID: 1292693812}
   m_Layer: 0
-  m_Name: Outline Top Middle Back (1)
-  m_TagString: Untagged
+  m_Name: Outline Top Middle Back
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24150,7 +24809,7 @@ GameObject:
   - component: {fileID: 1301928323}
   m_Layer: 0
   m_Name: 'Outline Top Doorframe Right Front '
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24485,7 +25144,7 @@ GameObject:
   - component: {fileID: 1322115231}
   m_Layer: 0
   m_Name: Outline Top Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24571,7 +25230,7 @@ GameObject:
   - component: {fileID: 1323611612}
   m_Layer: 0
   m_Name: Outline Bottom Left Middle
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24657,7 +25316,7 @@ GameObject:
   - component: {fileID: 1328651136}
   m_Layer: 0
   m_Name: Outline Top Step2
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24828,7 +25487,7 @@ GameObject:
   - component: {fileID: 1349830102}
   m_Layer: 0
   m_Name: Outline Side Step3 Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25004,7 +25663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1359746091
 Transform:
   m_ObjectHideFlags: 0
@@ -25013,10 +25672,10 @@ Transform:
   m_GameObject: {fileID: 1359746090}
   m_LocalRotation: {x: -0, y: 0.13052624, z: -0, w: 0.9914449}
   m_LocalPosition: {x: 0, y: -0.15, z: 0}
-  m_LocalScale: {x: 1.22, y: 0.008, z: 1.22}
+  m_LocalScale: {x: 1.42, y: 0.008, z: 1.42}
   m_Children: []
   m_Father: {fileID: 95303380}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1359746092
 CapsuleCollider:
@@ -25276,7 +25935,7 @@ GameObject:
   - component: {fileID: 1397044275}
   m_Layer: 0
   m_Name: Outline Pillar Front Left Top
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25798,7 +26457,7 @@ GameObject:
   - component: {fileID: 1405718025}
   m_Layer: 0
   m_Name: Outline Top Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25871,6 +26530,91 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1405718023}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1412146766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1412146767}
+  - component: {fileID: 1412146770}
+  - component: {fileID: 1412146769}
+  - component: {fileID: 1412146768}
+  m_Layer: 0
+  m_Name: rahmen top
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1412146767
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412146766}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.35525, z: 0}
+  m_LocalScale: {x: 0.02, y: 0.0245, z: 0.5700007}
+  m_Children: []
+  m_Father: {fileID: 236654544}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1412146768
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412146766}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1412146769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412146766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1412146770
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412146766}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1418390453
 GameObject:
   m_ObjectHideFlags: 0
@@ -26048,7 +26792,7 @@ GameObject:
   - component: {fileID: 1429886920}
   m_Layer: 0
   m_Name: Outline Bottom Left Short
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26134,7 +26878,7 @@ GameObject:
   - component: {fileID: 1434825738}
   m_Layer: 0
   m_Name: Outline Top Step3
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26317,7 +27061,7 @@ GameObject:
   - component: {fileID: 1440248642}
   m_Layer: 0
   m_Name: Outline Top Right Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26586,7 +27330,7 @@ GameObject:
   - component: {fileID: 1444551992}
   m_Layer: 0
   m_Name: Outline Pillar Front Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26659,6 +27403,139 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1444551990}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1446627756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1000010537168624, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1446627757}
+  - component: {fileID: 1446627762}
+  - component: {fileID: 1446627761}
+  - component: {fileID: 1446627760}
+  - component: {fileID: 1446627759}
+  - component: {fileID: 1446627758}
+  m_Layer: 5
+  m_Name: UI Canvas Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1446627757
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224000014175631142, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1446627756}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00000059604645}
+  m_LocalScale: {x: 0.0010884353, y: 0.007999999, z: 0.03999999}
+  m_Children:
+  - {fileID: 1101635037}
+  m_Father: {fileID: 1459860251}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.99999976, y: 0}
+  m_SizeDelta: {x: 500, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1446627758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1446627756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0d67dcf8e5b64448e37fc50f56f1ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerCanvas: {fileID: 0}
+  materialOutline: {fileID: 0}
+  radius: 1
+  linewidth: 0.1
+--- !u!114 &1446627759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1446627756}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276771c4fbfc9124d9929b0ca75ea073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  marker: {fileID: 1446627756}
+  thetaScale: 0.01
+  size: 0
+  radius: 3
+  linewidth: 0.2
+  mat: {fileID: 0}
+--- !u!114 &1446627760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000010649001456, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1446627756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1446627761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000013098199044, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1446627756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1446627762
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 223000012158163732, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1446627756}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1449866273
 GameObject:
   m_ObjectHideFlags: 0
@@ -26831,6 +27708,93 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1450908988}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1459860250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1459860251}
+  - component: {fileID: 1459860254}
+  - component: {fileID: 1459860253}
+  - component: {fileID: 1459860252}
+  m_Layer: 0
+  m_Name: rahmen top Textpanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1459860251
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1459860250}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.3555001}
+  m_LocalScale: {x: 0.02, y: 0.7349999, z: 0.1}
+  m_Children:
+  - {fileID: 695408624}
+  - {fileID: 1446627757}
+  m_Father: {fileID: 557570825}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1459860252
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1459860250}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1459860253
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1459860250}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1459860254
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1459860250}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1459991605
 GameObject:
   m_ObjectHideFlags: 0
@@ -26844,7 +27808,7 @@ GameObject:
   - component: {fileID: 1459991607}
   m_Layer: 0
   m_Name: Outline Side Step2 Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26930,7 +27894,7 @@ GameObject:
   - component: {fileID: 1460514967}
   m_Layer: 0
   m_Name: Outline Bottom Right Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27102,7 +28066,7 @@ GameObject:
   - component: {fileID: 1487426355}
   m_Layer: 0
   m_Name: Outline Top Left Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27188,7 +28152,7 @@ GameObject:
   - component: {fileID: 1493907516}
   m_Layer: 0
   m_Name: Outline Bottom Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27274,7 +28238,7 @@ GameObject:
   - component: {fileID: 1494617666}
   m_Layer: 0
   m_Name: Outline Pillar Front Right Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27360,7 +28324,7 @@ GameObject:
   - component: {fileID: 1497315580}
   m_Layer: 0
   m_Name: Outline Bottom Back Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27531,7 +28495,7 @@ GameObject:
   - component: {fileID: 1502660940}
   - component: {fileID: 1502660939}
   m_Layer: 0
-  m_Name: rahmen bottom
+  m_Name: rahmen left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27789,7 +28753,7 @@ GameObject:
   - component: {fileID: 1512968005}
   m_Layer: 0
   m_Name: Outline Top Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27960,7 +28924,7 @@ GameObject:
   - component: {fileID: 1516408127}
   m_Layer: 0
   m_Name: Outline Top Back Middle
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28078,7 +29042,7 @@ GameObject:
   - component: {fileID: 1520611482}
   m_Layer: 0
   m_Name: Outline Top Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29969,7 +30933,7 @@ GameObject:
   - component: {fileID: 1528507561}
   m_Layer: 0
   m_Name: Outline Top Back Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30099,7 +31063,7 @@ GameObject:
   - component: {fileID: 1538160007}
   m_Layer: 0
   m_Name: Outline Pillar Front Left Outside Top
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30296,7 +31260,7 @@ GameObject:
   - component: {fileID: 1548022580}
   m_Layer: 0
   m_Name: Outline Bottom Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30798,7 +31762,7 @@ GameObject:
   - component: {fileID: 1580407106}
   m_Layer: 0
   m_Name: Outline Top Back Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30884,7 +31848,7 @@ GameObject:
   - component: {fileID: 1589203304}
   m_Layer: 0
   m_Name: Outline Top Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30970,7 +31934,7 @@ GameObject:
   - component: {fileID: 1591288368}
   m_Layer: 0
   m_Name: Outline Bottom Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31056,7 +32020,7 @@ GameObject:
   - component: {fileID: 1598050485}
   m_Layer: 0
   m_Name: Outline Pillar Back Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31129,6 +32093,91 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1598050483}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1600172381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1600172382}
+  - component: {fileID: 1600172385}
+  - component: {fileID: 1600172384}
+  - component: {fileID: 1600172383}
+  m_Layer: 0
+  m_Name: rahmen right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1600172382
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600172381}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.2755}
+  m_LocalScale: {x: 0.02, y: 0.73499995, z: 0.022800028}
+  m_Children: []
+  m_Father: {fileID: 236654544}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1600172383
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600172381}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1600172384
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600172381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1600172385
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600172381}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1600367306
 GameObject:
   m_ObjectHideFlags: 0
@@ -31227,7 +32276,7 @@ GameObject:
   - component: {fileID: 1601471677}
   m_Layer: 0
   m_Name: Outline Bottom Front Half
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31424,7 +32473,7 @@ GameObject:
   - component: {fileID: 1608848760}
   m_Layer: 0
   m_Name: Outline Top Pillar Front Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31510,7 +32559,7 @@ GameObject:
   - component: {fileID: 1627182934}
   m_Layer: 0
   m_Name: Outline Pillar Front Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31596,7 +32645,7 @@ GameObject:
   - component: {fileID: 1628668359}
   m_Layer: 0
   m_Name: Outline Bottom Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31719,7 +32768,7 @@ GameObject:
   - component: {fileID: 1631265975}
   m_Layer: 0
   m_Name: Outline Top Back Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32092,7 +33141,7 @@ GameObject:
   - component: {fileID: 1647579735}
   m_Layer: 0
   m_Name: Outline Pillar Back Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32220,7 +33269,7 @@ GameObject:
   - component: {fileID: 1650602940}
   m_Layer: 0
   m_Name: Outline Bottom Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32306,7 +33355,7 @@ GameObject:
   - component: {fileID: 1651610410}
   m_Layer: 0
   m_Name: Outline Pillar Divider Back Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32710,7 +33759,7 @@ GameObject:
   - component: {fileID: 1670085293}
   m_Layer: 0
   m_Name: Outline Top Back Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32783,6 +33832,121 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1670085291}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1672888818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1000010537168624, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1672888819}
+  - component: {fileID: 1672888824}
+  - component: {fileID: 1672888823}
+  - component: {fileID: 1672888822}
+  - component: {fileID: 1672888820}
+  m_Layer: 5
+  m_Name: MarkerCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1672888819
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224000014175631142, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672888818}
+  m_LocalRotation: {x: 0, y: 0.70710677, z: -0.70710677, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children:
+  - {fileID: 3477410}
+  m_Father: {fileID: 95303380}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 90, y: 90, z: -90}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.13}
+  m_SizeDelta: {x: 1000, y: 1000}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1672888820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672888818}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0d67dcf8e5b64448e37fc50f56f1ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerCanvas: {fileID: 0}
+  materialOutline: {fileID: 0}
+  radius: 0.7
+  linewidth: 0.035
+--- !u!114 &1672888822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000010649001456, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672888818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1672888823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000013098199044, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672888818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1672888824
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 223000012158163732, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672888818}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1673029491
 GameObject:
   m_ObjectHideFlags: 0
@@ -32796,7 +33960,7 @@ GameObject:
   - component: {fileID: 1673029493}
   m_Layer: 0
   m_Name: Outline Pillar Back Left Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32882,7 +34046,7 @@ GameObject:
   - component: {fileID: 1673200132}
   m_Layer: 0
   m_Name: Outline Pillar Back Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33098,7 +34262,10 @@ MonoBehaviour:
   speed: 2.5
   isVisibleAtStart: 0
   display: {fileID: 966420408}
+  collider: {fileID: 0}
   marker: {fileID: 1719539161}
+  markerMaterial: {fileID: 0}
+  markerMaterialActive: {fileID: 0}
 --- !u!1 &1684984801
 GameObject:
   m_ObjectHideFlags: 0
@@ -33376,7 +34543,7 @@ GameObject:
   - component: {fileID: 1710620550}
   m_Layer: 0
   m_Name: Outline Bottom Step3
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33547,7 +34714,7 @@ GameObject:
   - component: {fileID: 1718746429}
   m_Layer: 0
   m_Name: Outline Pillar Front Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33719,7 +34886,7 @@ GameObject:
   - component: {fileID: 1719888780}
   m_Layer: 0
   m_Name: Outline Side Step4 Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33957,7 +35124,7 @@ GameObject:
   - component: {fileID: 1752557720}
   m_Layer: 0
   m_Name: Outline Top Middle Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34128,7 +35295,7 @@ GameObject:
   - component: {fileID: 1758082383}
   m_Layer: 0
   m_Name: Outline Bottom Front (1)
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34214,7 +35381,7 @@ GameObject:
   - component: {fileID: 1760949750}
   m_Layer: 0
   m_Name: Outline Bottom Right Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34300,7 +35467,7 @@ GameObject:
   - component: {fileID: 1761750562}
   m_Layer: 0
   m_Name: Outline Bottom Left Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34575,6 +35742,105 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79c8318371fe44b4684cec764e25773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1778176007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1000010537168624, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1778176008}
+  - component: {fileID: 1778176011}
+  - component: {fileID: 1778176010}
+  - component: {fileID: 1778176009}
+  m_Layer: 5
+  m_Name: UI Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1778176008
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224000014175631142, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778176007}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
+  m_Children:
+  - {fileID: 2005492361}
+  m_Father: {fileID: 95303380}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: -90, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.1}
+  m_SizeDelta: {x: 1000, y: 1000}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1778176009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000010649001456, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778176007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1778176010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000013098199044, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778176007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1778176011
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 223000012158163732, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778176007}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1789369594
 GameObject:
   m_ObjectHideFlags: 0
@@ -34699,7 +35965,7 @@ GameObject:
   - component: {fileID: 1794995231}
   m_Layer: 0
   m_Name: Outline Pillar Front Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34818,7 +36084,10 @@ MonoBehaviour:
   speed: 0.5
   isVisibleAtStart: 0
   display: {fileID: 30022284}
+  collider: {fileID: 0}
   marker: {fileID: 482417409}
+  markerMaterial: {fileID: 0}
+  markerMaterialActive: {fileID: 0}
 --- !u!1 &1806586400
 GameObject:
   m_ObjectHideFlags: 0
@@ -34832,7 +36101,7 @@ GameObject:
   - component: {fileID: 1806586402}
   m_Layer: 0
   m_Name: Outline Top Middle Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34918,7 +36187,7 @@ GameObject:
   - component: {fileID: 1808374995}
   m_Layer: 0
   m_Name: Outline Bottom Step2
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35054,7 +36323,7 @@ GameObject:
   - component: {fileID: 1821139811}
   m_Layer: 0
   m_Name: 'Outline Top Front '
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35226,7 +36495,7 @@ GameObject:
   - component: {fileID: 1831898732}
   m_Layer: 0
   m_Name: Outline Top Doorframe Left Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35312,7 +36581,7 @@ GameObject:
   - component: {fileID: 1835533003}
   m_Layer: 0
   m_Name: Outline Top Left over Entrance (1)
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35398,7 +36667,7 @@ GameObject:
   - component: {fileID: 1839362032}
   m_Layer: 0
   m_Name: Outline Bottom Steps Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35484,7 +36753,7 @@ GameObject:
   - component: {fileID: 1841285319}
   m_Layer: 0
   m_Name: Outline Top Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35656,7 +36925,7 @@ GameObject:
   - component: {fileID: 1849538568}
   m_Layer: 0
   m_Name: Outline Top Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35828,7 +37097,7 @@ GameObject:
   - component: {fileID: 1854214331}
   m_Layer: 0
   m_Name: Outline Side Step1 Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36006,8 +37275,8 @@ GameObject:
   - component: {fileID: 1871689654}
   - component: {fileID: 1871689653}
   m_Layer: 0
-  m_Name: Outline Top Middle Right (1)
-  m_TagString: Untagged
+  m_Name: Outline Top Middle Right
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36093,7 +37362,7 @@ GameObject:
   - component: {fileID: 1872506956}
   m_Layer: 0
   m_Name: Outline Pillar Step2 Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36179,7 +37448,7 @@ GameObject:
   - component: {fileID: 1878127581}
   m_Layer: 0
   m_Name: Outline Pillar Back Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36265,7 +37534,7 @@ GameObject:
   - component: {fileID: 1883393892}
   m_Layer: 0
   m_Name: Outline Bottom Left Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36522,7 +37791,7 @@ GameObject:
   - component: {fileID: 1895585505}
   m_Layer: 0
   m_Name: Outline Pillar Front Left Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36694,7 +37963,7 @@ GameObject:
   - component: {fileID: 1913082042}
   m_Layer: 0
   m_Name: Outline Top Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36865,7 +38134,7 @@ GameObject:
   - component: {fileID: 1923214040}
   m_Layer: 0
   m_Name: Outline Pillar Divider Front Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36951,7 +38220,7 @@ GameObject:
   - component: {fileID: 1925668716}
   m_Layer: 0
   m_Name: Outline Top Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37037,7 +38306,7 @@ GameObject:
   - component: {fileID: 1925837173}
   m_Layer: 0
   m_Name: Outline Top Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37123,7 +38392,7 @@ GameObject:
   - component: {fileID: 1927674483}
   m_Layer: 0
   m_Name: Outline Pillar Back Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37209,7 +38478,7 @@ GameObject:
   - component: {fileID: 1930284846}
   m_Layer: 0
   m_Name: Outline Pillar Divider Front Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37295,7 +38564,7 @@ GameObject:
   - component: {fileID: 1939570869}
   m_Layer: 0
   m_Name: Outline Top Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37368,6 +38637,91 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1939570867}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1947199900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1947199901}
+  - component: {fileID: 1947199904}
+  - component: {fileID: 1947199903}
+  - component: {fileID: 1947199902}
+  m_Layer: 0
+  m_Name: rahmen left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1947199901
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1947199900}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.2755}
+  m_LocalScale: {x: 0.02, y: 0.73499995, z: 0.022800028}
+  m_Children: []
+  m_Father: {fileID: 236654544}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1947199902
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1947199900}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1947199903
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1947199900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1947199904
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1947199900}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1948917116
 GameObject:
   m_ObjectHideFlags: 0
@@ -37499,7 +38853,7 @@ GameObject:
   - component: {fileID: 1960165349}
   m_Layer: 0
   m_Name: Outline Bottom Step1
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37585,7 +38939,7 @@ GameObject:
   - component: {fileID: 1969707243}
   m_Layer: 0
   m_Name: Outline Pillar Back Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37703,7 +39057,7 @@ GameObject:
   - component: {fileID: 1972765225}
   m_Layer: 0
   m_Name: Outline Side Step1 Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37789,7 +39143,7 @@ GameObject:
   - component: {fileID: 1974771650}
   m_Layer: 0
   m_Name: Outline Bottom Left Short (1)
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37994,7 +39348,7 @@ GameObject:
   - component: {fileID: 1982799241}
   m_Layer: 0
   m_Name: Outline Top Divider Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38080,7 +39434,7 @@ GameObject:
   - component: {fileID: 1991947698}
   m_Layer: 0
   m_Name: Outline Bottom Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38277,6 +39631,84 @@ MonoBehaviour:
   distance: 2
   rend: {fileID: 30022288}
   POI: {fileID: 482417409}
+--- !u!1 &2005492360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1000013010469950, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2005492361}
+  - component: {fileID: 2005492363}
+  - component: {fileID: 2005492362}
+  m_Layer: 5
+  m_Name: Year
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2005492361
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224000011521819134, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2005492360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1778176008}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1000, y: 1000}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2005492362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000011550058760, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2005492360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.47058824}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 35876dee812942948a32b14304a36aac, type: 3}
+    m_FontSize: 200
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 1999
+--- !u!222 &2005492363
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222000013892404212, guid: d7e77f421d61def4e9fdcb09d76452f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2005492360}
 --- !u!1 &2008605308
 GameObject:
   m_ObjectHideFlags: 0
@@ -38639,7 +40071,7 @@ GameObject:
   - component: {fileID: 2011965415}
   m_Layer: 0
   m_Name: Outline Bottom Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38811,7 +40243,7 @@ GameObject:
   - component: {fileID: 2014949805}
   m_Layer: 0
   m_Name: Outline Top Pillar Back Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38928,7 +40360,7 @@ GameObject:
   - component: {fileID: 2018253831}
   m_Layer: 0
   m_Name: Outline Pillar Back Right
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39099,7 +40531,7 @@ GameObject:
   - component: {fileID: 2021101741}
   - component: {fileID: 2021101740}
   m_Layer: 0
-  m_Name: rahmen right
+  m_Name: rahmen bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39185,7 +40617,7 @@ GameObject:
   - component: {fileID: 2030981279}
   m_Layer: 0
   m_Name: Outline Top Middle Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39401,7 +40833,7 @@ GameObject:
   - component: {fileID: 2047969394}
   m_Layer: 0
   m_Name: Outline Top Left Outside
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39755,7 +41187,7 @@ GameObject:
   - component: {fileID: 2066638040}
   m_Layer: 0
   m_Name: Outline Top Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39841,7 +41273,7 @@ GameObject:
   - component: {fileID: 2069113244}
   m_Layer: 0
   m_Name: Outline Pillar Divider Back Left
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41698,7 +43130,7 @@ GameObject:
   - component: {fileID: 2076584910}
   m_Layer: 0
   m_Name: Outline Bottom Doorframe Right Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41882,7 +43314,7 @@ GameObject:
   - component: {fileID: 2083738209}
   m_Layer: 0
   m_Name: Outline Bottom Back
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41968,7 +43400,7 @@ GameObject:
   - component: {fileID: 2089466067}
   m_Layer: 0
   m_Name: 'Outline Top Doorframe Right Back '
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42225,7 +43657,7 @@ GameObject:
   - component: {fileID: 2113418245}
   m_Layer: 0
   m_Name: Outline Bottom Left Right Short
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42397,7 +43829,7 @@ GameObject:
   - component: {fileID: 2115820413}
   m_Layer: 0
   m_Name: Outline Top Right Front
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42569,7 +44001,7 @@ GameObject:
   - component: {fileID: 2124190322}
   m_Layer: 0
   m_Name: Outline Bottom Step4
-  m_TagString: Untagged
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
