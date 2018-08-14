@@ -62,14 +62,15 @@ public class ShowDisplay : MonoBehaviour
         // get all child objects of the selected display object, including self
         displayComponents = display.GetComponentsInChildren<Transform>();
 
+        /*
         foreach (Transform comp in displayComponents)
         {
             if (comp.GetComponent<MeshFilter>() != null)
             {
                 Debug.Log(comp.name);
-                //comp.GetComponent<Renderer>().enabled = false;
             }
         }
+        */
 
 
         // set alpha of all display components to given visibility parameter
@@ -114,22 +115,6 @@ public class ShowDisplay : MonoBehaviour
             markerText.material.color = textCol;
         }
 
-        /*
-        // get circles
-        platform = collider.transform.parent;
-        circle = transform.Find("MarkerCanvas/Circle");
-        outerCircle = transform.Find("MarkerCanvas/OuterCircle");
-
-        if (circle != null)
-        {
-            Debug.Log("found circle");
-        }
-        else
-        {
-            Debug.Log("circle not found");
-        }
-        */
-
 
         // instanciate distance --> just for unity :-)
         distance = 1000f;
@@ -170,8 +155,6 @@ public class ShowDisplay : MonoBehaviour
                 // change color of marker object
                 StartCoroutine(LerpColor(marker, markerMaterialActiveCol, speed));
                 StartCoroutine(LerpText(textActiveCol, speed));
-                //StartCoroutine(LerpColor(circle.gameObject, markerMaterialActiveCol, speed));
-                //StartCoroutine(LerpColor(outerCircle.gameObject, markerMaterialActiveCol, speed));
             }
         }
 
@@ -201,8 +184,6 @@ public class ShowDisplay : MonoBehaviour
                 // change color of marker object
                 StartCoroutine(LerpColor(marker, markerMaterialCol, speed));
                 StartCoroutine(LerpText(textCol, speed));
-                //StartCoroutine(LerpColor(circle.gameObject, markerMaterialCol, speed));
-                //StartCoroutine(LerpColor(outerCircle.gameObject, markerMaterialCol, speed));
             }
         }
     }
@@ -307,6 +288,7 @@ public class ShowDisplay : MonoBehaviour
             yield return new WaitForSeconds(updateFrequence);
         }
     }
+
 
     IEnumerator LerpText(Color targetColor, float time)
     {
