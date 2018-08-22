@@ -32,6 +32,10 @@ public class ShowDisplayWithLift : MonoBehaviour
 
     public GameObject player;
 
+    private Vector3 currentPos;
+    private Vector3 prevPos;
+    private float movement;
+
     private Canvas[] markerCanvas;
     private Canvas markerCanvasUpper;
     private Canvas markerCanvasLower;
@@ -44,7 +48,11 @@ public class ShowDisplayWithLift : MonoBehaviour
     private float alphaHide = 0f;
     private float alphaShow = 1f;
 
+    private bool teleportedOut = false;
     private Vector3 platformInitialPosition;
+    private Vector3 markerCanvasInitialPosition;
+    private Vector3 playerInitialPosition;
+    private Vector3 playerCurrentPosition;
 
     // set update frequence for transitions (e.g. fade)
     private float frequence = 90;
@@ -65,7 +73,6 @@ public class ShowDisplayWithLift : MonoBehaviour
         // calculate update frequence
         updateFrequence = 1 / frequence;
 
-
         // get all child objects of the selected display object, including self
         displayComponents = display.GetComponentsInChildren<Transform>();
 
@@ -75,8 +82,11 @@ public class ShowDisplayWithLift : MonoBehaviour
         markerCanvasUpper = markerCanvas[1];      
         markerCanvasLower = markerCanvas[2];
 
+        markerCanvasInitialPosition = markerCanvasLower.transform.position;
         platformInitialPosition = platform.transform.position;
-        //Debug.Log(platformInitialPosition);
+        currentPos = player.transform.position;
+        prevPos = player.transform.position;
+        playerInitialPosition = player.transform.position;
 
         /*
         foreach (Transform comp in displayComponents)
@@ -139,12 +149,21 @@ public class ShowDisplayWithLift : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         // show display 
         distance = Vector3.Distance(Camera.main.transform.position, collider.transform.position);
         //Debug.Log("Distance: " + distance);
 
-        if (distance < radius && isOutside)
+        // detect teleporation
+        movement = Vector3.Distance(currentPos, prevPos);
+        prevPos = currentPos;
+        currentPos = player.transform.position;
+        
+        if (!isOutside && movement > 0) {
+            Debug.Log("--------- teleportion detected");
+            teleportedOut = true;
+        }
+
+        if (isOutside && distance < radius)
         {
             isOutside = false;
             StopAllCoroutines();
@@ -173,6 +192,7 @@ public class ShowDisplayWithLift : MonoBehaviour
             }
 
             // lift platform up
+            playerInitialPosition = player.transform.position;
             StartCoroutine(Lift(speed*liftSpeedFactor, height, true));
         }
 
@@ -205,7 +225,18 @@ public class ShowDisplayWithLift : MonoBehaviour
             }
 
             // lift platform down
-            StartCoroutine(Lift(speed*liftSpeedFactor*1.25f, height, false));
+            if (teleportedOut)
+            {
+                Debug.Log("--------- teleportion detected");
+                platform.transform.position = platformInitialPosition;
+                markerCanvasLower.transform.position = markerCanvasInitialPosition;
+                playerCurrentPosition = player.transform.position;
+                player.transform.position = new Vector3(playerCurrentPosition.x, playerInitialPosition.y, playerCurrentPosition.z);
+                teleportedOut = false;
+            }
+            else {
+                StartCoroutine(Lift(speed * liftSpeedFactor * 1.25f, height, false));
+            }
         }
     }
 
