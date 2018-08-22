@@ -158,8 +158,8 @@ public class ShowDisplayWithLift : MonoBehaviour
         prevPos = currentPos;
         currentPos = player.transform.position;
         
-        if (!isOutside && movement > 0) {
-            Debug.Log("--------- teleportion detected");
+        if (!isOutside && movement > 0.2f) {
+            //Debug.Log("teleportion detected");
             teleportedOut = true;
         }
 
@@ -225,9 +225,10 @@ public class ShowDisplayWithLift : MonoBehaviour
             }
 
             // lift platform down
-            if (teleportedOut)
+
+            //if (teleportOut)
+            if (true)
             {
-                Debug.Log("--------- teleportion detected");
                 platform.transform.position = platformInitialPosition;
                 markerCanvasLower.transform.position = markerCanvasInitialPosition;
                 playerCurrentPosition = player.transform.position;
