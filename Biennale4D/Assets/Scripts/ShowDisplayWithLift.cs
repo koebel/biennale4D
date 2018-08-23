@@ -82,6 +82,8 @@ public class ShowDisplayWithLift : MonoBehaviour
         markerCanvasUpper = markerCanvas[1];      
         markerCanvasLower = markerCanvas[2];
 
+        //UiCanvas.GetComponent<CanvasRenderer>().cull = true;
+
         markerCanvasInitialPosition = markerCanvasLower.transform.position;
         platformInitialPosition = platform.transform.position;
         currentPos = player.transform.position;
