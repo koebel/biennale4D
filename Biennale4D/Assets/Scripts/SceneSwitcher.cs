@@ -20,10 +20,10 @@ public class SceneSwitcher : MonoBehaviour {
 
     // Define scenes
     private string scene1 = "Experiment1";
-    private string scene2 = "Pavillon1984";
-    private string scene3 = "Pavillon2007";
-    private string scene4 = "Pavillon2013";
-    private string testscene = "Demo";
+    private string scene2 = "Experiment2";
+    private string scene3 = "Experiment1";
+    private string scene4 = "Experiment1";
+    private string testscene = "Experiment1";
     // testscene is called with grip button
     // could serve for the intro/training scene
     private string currentScene;
@@ -97,12 +97,14 @@ public class SceneSwitcher : MonoBehaviour {
 
         // load Materials
         mat1952 = (Material)Resources.Load("Timeline/Materials/1952_passiv", typeof(Material));
-        mat1984 = (Material)Resources.Load("Timeline/Materials/1984_passiv", typeof(Material));
+        //mat1984 = (Material)Resources.Load("Timeline/Materials/1984_passiv", typeof(Material));
+        mat1984 = defaultMaterial;
         mat2007 = (Material)Resources.Load("Timeline/Materials/2007_passiv", typeof(Material));
         mat2013 = (Material)Resources.Load("Timeline/Materials/2013_passiv", typeof(Material));
 
         matActive1952 = (Material)Resources.Load("Timeline/Materials/1952_aktiv", typeof(Material));
-        matActive1984 = (Material)Resources.Load("Timeline/Materials/1984_aktiv", typeof(Material));
+        //matActive1984 = (Material)Resources.Load("Timeline/Materials/1984_aktiv", typeof(Material));
+        matActive1984 = defaultMaterial;
         matActive2007 = (Material)Resources.Load("Timeline/Materials/2007_aktiv", typeof(Material));
         matActive2013 = (Material)Resources.Load("Timeline/Materials/2013_aktiv", typeof(Material));
 
@@ -203,6 +205,21 @@ public class SceneSwitcher : MonoBehaviour {
         }
 
         // Select Scene
+        if (device.GetPressDown(SteamVR_Controller.ButtonMask.Trigger) && switchSceneOK)
+        {
+            sceneSwitcher.SetActive(false);
+            menuActive = false;
+            switchSceneOK = false;
+            timelineActive = false;
+
+            // Set current position as start position for next scene
+            SetStartposition.position = camrig.transform.position;
+            SetStartposition.currentYear = current;
+
+            // switch to currently selected scene & get to default position
+            switchScene(current);
+        }
+
         if (device.GetPressDown(SteamVR_Controller.ButtonMask.Touchpad) && device.GetAxis().y >= 0.0f && switchSceneOK)
         {
             sceneSwitcher.SetActive(false);

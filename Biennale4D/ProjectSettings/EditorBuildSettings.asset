@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Experiment2.unity
+    guid: c640fc3fc2a6b614cad45a393eed8aa5
+  - enabled: 1
+    path: Assets/Scenes/Experiment1.unity
+    guid: 64b85b56e2acd7e4a8ba22e536ba2062
+  - enabled: 1
     path: Assets/Scenes/Demo.unity
     guid: 7c5b3c2e9408db640befff0a13b0e2e6
   - enabled: 1
     path: Assets/Scenes/Pavillon1952.unity
     guid: 50395c65d4822f4458e9ca60fd9b138a
-  - enabled: 1
-    path: Assets/Scenes/Pavillon1952-experiment.unity
-    guid: 64b85b56e2acd7e4a8ba22e536ba2062
   - enabled: 1
     path: Assets/Scenes/Pavillon1984.unity
     guid: 714d27ebaa20aaa498bdcf09f51a25c8
