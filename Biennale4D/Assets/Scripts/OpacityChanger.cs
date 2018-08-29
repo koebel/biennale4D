@@ -9,7 +9,6 @@ public class OpacityChanger : MonoBehaviour {
     SteamVR_Controller.Device device;
 
     // Timeline Interactor
-    //private GameObject controller;
     public GameObject photo;
 
     private float minVal = 0f;
@@ -29,8 +28,6 @@ public class OpacityChanger : MonoBehaviour {
     void Start() {
         // assign parent objects of timeline interactor
         col = photo.GetComponent<Renderer>().material.color;
-
-        // unity doesn't allow to directly access the alpha value because not all materials have an alpha
         col.a = opacity;
         photo.GetComponent<Renderer>().material.color = col;
     }
