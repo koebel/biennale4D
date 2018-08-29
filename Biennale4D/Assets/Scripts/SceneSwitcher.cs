@@ -29,15 +29,15 @@ public class SceneSwitcher : MonoBehaviour {
     private string currentScene;
 
     // materials for each scene
-    private Material mat1952;
-    private Material mat1984;
-    private Material mat2007;
-    private Material mat2013;
+    private Material matExperiment1;
+    private Material matExperiment2;
+    private Material matExperiment3;
+    private Material matExperiment4;
 
-    private Material matActive1952;
-    private Material matActive1984;
-    private Material matActive2007;
-    private Material matActive2013;
+    private Material matActiveExperiment1;
+    private Material matActiveExperiment2;
+    private Material matActiveExperiment3;
+    private Material matActiveExperiment4;
 
     private Material defaultMat;
 
@@ -53,7 +53,7 @@ public class SceneSwitcher : MonoBehaviour {
     private bool menuActive = false;
     private bool switchSceneOK = false;
     private bool touched = false;
-    public static bool timelineActive = false;
+    public static bool switcherActive = false;
 
     // visible sides of cube
     private int current = 0;
@@ -96,17 +96,17 @@ public class SceneSwitcher : MonoBehaviour {
         bottom = sceneSwitcher.transform.Find("Bottom").gameObject;
 
         // load Materials
-        mat1952 = (Material)Resources.Load("Timeline/Materials/1952_passiv", typeof(Material));
-        //mat1984 = (Material)Resources.Load("Timeline/Materials/1984_passiv", typeof(Material));
-        mat1984 = defaultMaterial;
-        mat2007 = (Material)Resources.Load("Timeline/Materials/2007_passiv", typeof(Material));
-        mat2013 = (Material)Resources.Load("Timeline/Materials/2013_passiv", typeof(Material));
+        matExperiment1 = (Material)Resources.Load("Timeline/Materials/1952_passiv", typeof(Material));
+        //matExperiment2 = (Material)Resources.Load("Timeline/Materials/1984_passiv", typeof(Material));
+        matExperiment2 = defaultMaterial;
+        matExperiment3 = (Material)Resources.Load("Timeline/Materials/2007_passiv", typeof(Material));
+        matExperiment4 = (Material)Resources.Load("Timeline/Materials/2013_passiv", typeof(Material));
 
-        matActive1952 = (Material)Resources.Load("Timeline/Materials/1952_aktiv", typeof(Material));
-        //matActive1984 = (Material)Resources.Load("Timeline/Materials/1984_aktiv", typeof(Material));
-        matActive1984 = defaultMaterial;
-        matActive2007 = (Material)Resources.Load("Timeline/Materials/2007_aktiv", typeof(Material));
-        matActive2013 = (Material)Resources.Load("Timeline/Materials/2013_aktiv", typeof(Material));
+        matActiveExperiment1 = (Material)Resources.Load("Timeline/Materials/1952_aktiv", typeof(Material));
+        //matActiveExperiment2 = (Material)Resources.Load("Timeline/Materials/1984_aktiv", typeof(Material));
+        matActiveExperiment2 = defaultMaterial;
+        matActiveExperiment3 = (Material)Resources.Load("Timeline/Materials/2007_aktiv", typeof(Material));
+        matActiveExperiment4 = (Material)Resources.Load("Timeline/Materials/2013_aktiv", typeof(Material));
 
         //defaultMat = (Material)Resources.Load("Timeline/Materials/BlackNoReflection", typeof(Material));
         defaultMat = defaultMaterial;
@@ -123,14 +123,14 @@ public class SceneSwitcher : MonoBehaviour {
         matArray = new Material[size, 2];
 
         // fill array with materials
-        matArray[0, 0] = mat1952;
-        matArray[0, 1] = matActive1952;
-        matArray[1, 0] = mat1984;
-        matArray[1, 1] = matActive1984;
-        matArray[2, 0] = mat2007;
-        matArray[2, 1] = matActive2007;
-        matArray[3, 0] = mat2013;
-        matArray[3, 1] = matActive2013;
+        matArray[0, 0] = matExperiment1;
+        matArray[0, 1] = matActiveExperiment1;
+        matArray[1, 0] = matExperiment2;
+        matArray[1, 1] = matActiveExperiment2;
+        matArray[2, 0] = matExperiment3;
+        matArray[2, 1] = matActiveExperiment3;
+        matArray[3, 0] = matExperiment4;
+        matArray[3, 1] = matActiveExperiment4;
 
         // initialisierung der positionsmarker
         next = current + 1;
@@ -193,14 +193,14 @@ public class SceneSwitcher : MonoBehaviour {
                 sceneSwitcher.SetActive(true);
                 menuActive = true;
                 switchSceneOK = true;
-                timelineActive = true;
+                switcherActive = true;
             }
             // hide Cube
             else{
                 sceneSwitcher.SetActive(false);
                 menuActive = false;
                 switchSceneOK = false;
-                timelineActive = false;
+                switcherActive = false;
             }
         }
 
@@ -210,7 +210,7 @@ public class SceneSwitcher : MonoBehaviour {
             sceneSwitcher.SetActive(false);
             menuActive = false;
             switchSceneOK = false;
-            timelineActive = false;
+            switcherActive = false;
 
             // Set current position as start position for next scene
             SetStartposition.position = camrig.transform.position;
@@ -219,13 +219,13 @@ public class SceneSwitcher : MonoBehaviour {
             // switch to currently selected scene & get to default position
             switchScene(current);
         }
-
+        /*
         if (device.GetPressDown(SteamVR_Controller.ButtonMask.Touchpad) && device.GetAxis().y >= 0.0f && switchSceneOK)
         {
             sceneSwitcher.SetActive(false);
             menuActive = false;
             switchSceneOK = false;
-            timelineActive = false;
+            switcherActive = false;
 
             // Set default Position as start position for next scene
             SetStartposition.position = SetStartposition.defaultposition;
@@ -239,7 +239,7 @@ public class SceneSwitcher : MonoBehaviour {
             sceneSwitcher.SetActive(false);
             menuActive = false;
             switchSceneOK = false;
-            timelineActive = false;
+            switcherActive = false;
 
             // Set current position as start position for next scene
             SetStartposition.position = camrig.transform.position;
@@ -248,6 +248,7 @@ public class SceneSwitcher : MonoBehaviour {
             // switch to currently selected scene & keep current position
             switchScene(current);
         }
+        */
 
         // Switch to Test scene
         if (device.GetPress(SteamVR_Controller.ButtonMask.Grip) && switchSceneOK)
@@ -255,7 +256,7 @@ public class SceneSwitcher : MonoBehaviour {
             sceneSwitcher.SetActive(false);
             menuActive = false;
             switchSceneOK = false;
-            timelineActive = false;
+            switcherActive = false;
 
             SetStartposition.currentYear = current;
             SceneManager.LoadScene(testscene);
@@ -330,28 +331,28 @@ public class SceneSwitcher : MonoBehaviour {
             {
                 case 0:
                     if(currentScene != scene1) {
-                        Debug.Log("switch scene to 1952");
+                        Debug.Log("switch scene to " + scene1);
                         SceneManager.LoadScene(scene1); 
                 }
                     break;
 
                 case 1: 
                     if (currentScene != scene2) {
-                        Debug.Log("switch scene to 1984");
+                        Debug.Log("switch scene to " + scene2);
                         SceneManager.LoadScene(scene2);
                 }
                     break;
 
                 case 2:
                     if (currentScene != scene3) {
-                        Debug.Log("switch scene to 2007");
+                        Debug.Log("switch scene to " + scene3);
                         SceneManager.LoadScene(scene3);
                     }
                     break;
 
                 case 3:
                     if (currentScene != scene4) {
-                        Debug.Log("switch scene to 2013");
+                        Debug.Log("switch scene to " + scene4);
                         SceneManager.LoadScene(scene4);
                     }
                     break;
