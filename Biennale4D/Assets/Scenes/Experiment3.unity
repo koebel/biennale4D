@@ -2521,7 +2521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &197663665
 Transform:
   m_ObjectHideFlags: 0
@@ -3257,7 +3257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &242561572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3282,7 +3282,7 @@ MonoBehaviour:
   markerText: {fileID: 1147013666}
   year: 1952
   platform: {fileID: 1147013667}
-  height: 0.8
+  height: 0
   liftSpeedFactor: 3
   player: {fileID: 2010824005}
   textCol: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 0}
@@ -3302,7 +3302,7 @@ MonoBehaviour:
   materialOutline: {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
   radius: 0.7
   linewidth: 0.02
-  hasOuter: 0
+  hasOuter: 1
   outerDistance: 0.2
 --- !u!114 &242561575
 MonoBehaviour:
@@ -4540,7 +4540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &362098029
 Transform:
   m_ObjectHideFlags: 0
@@ -7176,7 +7176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &571226507
 Transform:
   m_ObjectHideFlags: 0
@@ -7642,7 +7642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &617653811
 Transform:
   m_ObjectHideFlags: 0
@@ -7683,7 +7683,7 @@ MonoBehaviour:
   markerText: {fileID: 1893784850}
   year: 1986
   platform: {fileID: 1893784851}
-  height: 0.6
+  height: 0
   liftSpeedFactor: 3
   player: {fileID: 2010824005}
   textCol: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 0}
@@ -7704,7 +7704,7 @@ MonoBehaviour:
   materialOutline: {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
   radius: 0.7
   linewidth: 0.02
-  hasOuter: 0
+  hasOuter: 1
   outerDistance: 0.2
 --- !u!114 &617653814
 MonoBehaviour:
@@ -7742,7 +7742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &625759717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7767,7 +7767,7 @@ MonoBehaviour:
   markerText: {fileID: 1155110969}
   year: 1958
   platform: {fileID: 1155110970}
-  height: 0.5
+  height: 0
   liftSpeedFactor: 3
   player: {fileID: 2010824005}
   textCol: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 0}
@@ -7788,7 +7788,7 @@ MonoBehaviour:
   materialOutline: {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
   radius: 0.7
   linewidth: 0.02
-  hasOuter: 0
+  hasOuter: 1
   outerDistance: 0.2
 --- !u!114 &625759721
 MonoBehaviour:
@@ -8029,7 +8029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &657259819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8054,7 +8054,7 @@ MonoBehaviour:
   markerText: {fileID: 1246177984}
   year: 1966
   platform: {fileID: 910747473}
-  height: 0.7
+  height: 0
   liftSpeedFactor: 3
   player: {fileID: 2010824005}
   textCol: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 0}
@@ -8075,7 +8075,7 @@ MonoBehaviour:
   materialOutline: {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
   radius: 0.7
   linewidth: 0.02
-  hasOuter: 0
+  hasOuter: 1
   outerDistance: 0.2
 --- !u!114 &657259823
 MonoBehaviour:
@@ -10790,7 +10790,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &883692870
 Transform:
   m_ObjectHideFlags: 0
@@ -13247,7 +13247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1107245642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13272,7 +13272,7 @@ MonoBehaviour:
   markerText: {fileID: 960954942}
   year: 1970
   platform: {fileID: 960954943}
-  height: 0.4
+  height: 0
   liftSpeedFactor: 3
   player: {fileID: 2010824005}
   textCol: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 0}
@@ -13293,7 +13293,7 @@ MonoBehaviour:
   materialOutline: {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
   radius: 0.7
   linewidth: 0.02
-  hasOuter: 0
+  hasOuter: 1
   outerDistance: 0.2
 --- !u!114 &1107245646
 MonoBehaviour:
@@ -14205,7 +14205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1158930013
 Transform:
   m_ObjectHideFlags: 0
@@ -15531,7 +15531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1250600464
 Transform:
   m_ObjectHideFlags: 0
@@ -16391,7 +16391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1311696296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16416,7 +16416,7 @@ MonoBehaviour:
   markerText: {fileID: 215666407}
   year: 1968
   platform: {fileID: 215666408}
-  height: 0.6
+  height: 0
   liftSpeedFactor: 3
   player: {fileID: 2010824005}
   textCol: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 0}
@@ -16437,7 +16437,7 @@ MonoBehaviour:
   materialOutline: {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
   radius: 0.7
   linewidth: 0.02
-  hasOuter: 0
+  hasOuter: 1
   outerDistance: 0.2
 --- !u!114 &1311696300
 MonoBehaviour:
@@ -21268,7 +21268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1683326979
 Transform:
   m_ObjectHideFlags: 0
@@ -22087,7 +22087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1751312710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22112,7 +22112,7 @@ MonoBehaviour:
   markerText: {fileID: 693888487}
   year: 1976
   platform: {fileID: 693888488}
-  height: 0.3
+  height: 0
   liftSpeedFactor: 3
   player: {fileID: 2010824005}
   textCol: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 0}
@@ -22133,7 +22133,7 @@ MonoBehaviour:
   materialOutline: {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
   radius: 0.7
   linewidth: 0.02
-  hasOuter: 0
+  hasOuter: 1
   outerDistance: 0.2
 --- !u!114 &1751312714
 MonoBehaviour:
@@ -22715,7 +22715,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1816138877
 Transform:
   m_ObjectHideFlags: 0
@@ -23824,7 +23824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1903755813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23849,7 +23849,7 @@ MonoBehaviour:
   markerText: {fileID: 1439340377}
   year: 1954
   platform: {fileID: 1439340378}
-  height: 0.4
+  height: 0
   liftSpeedFactor: 3
   player: {fileID: 2010824005}
   textCol: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 0}
@@ -23870,7 +23870,7 @@ MonoBehaviour:
   materialOutline: {fileID: 2100000, guid: c105f1e09ab8b4c4c908e3a36160b9cd, type: 2}
   radius: 0.7
   linewidth: 0.02
-  hasOuter: 0
+  hasOuter: 1
   outerDistance: 0.2
 --- !u!114 &1903755817
 MonoBehaviour:
@@ -24583,7 +24583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1962527919
 Transform:
   m_ObjectHideFlags: 0
