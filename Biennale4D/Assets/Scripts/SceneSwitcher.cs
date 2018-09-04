@@ -21,8 +21,8 @@ public class SceneSwitcher : MonoBehaviour {
     // Define scenes
     private string scene1 = "Experiment1";
     private string scene2 = "Experiment2";
-    private string scene3 = "Experiment1";
-    private string scene4 = "Experiment1";
+    private string scene3 = "Experiment3";
+    private string scene4 = "Experiment4";
     private string testscene = "Experiment1";
     // testscene is called with grip button
     // could serve for the intro/training scene
@@ -205,7 +205,7 @@ public class SceneSwitcher : MonoBehaviour {
         }
 
         // Select Scene
-        if (device.GetPressDown(SteamVR_Controller.ButtonMask.Trigger) && switchSceneOK)
+        if (device.GetPressDown(SteamVR_Controller.ButtonMask.Grip) && switchSceneOK)
         {
             sceneSwitcher.SetActive(false);
             menuActive = false;
@@ -250,6 +250,7 @@ public class SceneSwitcher : MonoBehaviour {
         }
         */
 
+        /*
         // Switch to Test scene
         if (device.GetPress(SteamVR_Controller.ButtonMask.Grip) && switchSceneOK)
         {
@@ -261,6 +262,7 @@ public class SceneSwitcher : MonoBehaviour {
             SetStartposition.currentYear = current;
             SceneManager.LoadScene(testscene);
         }
+        */
 
         // Checks for Touchpad touch swipe      
         if (device.GetTouch(SteamVR_Controller.ButtonMask.Touchpad)&&menuActive)
