@@ -529,7 +529,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011943893682, guid: ce089e37480a97c49ab452f05dbef581, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4000011943893682, guid: ce089e37480a97c49ab452f05dbef581, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -34388,7 +34388,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4912322896669798, guid: 5f967c4bd9a7c744fa40c82355158ff6, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1270897307071204, guid: 5f967c4bd9a7c744fa40c82355158ff6, type: 2}
       propertyPath: m_IsActive

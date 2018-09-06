@@ -6048,7 +6048,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ed8fba447db2b9b478e3bcb5fcf14236, type: 2}
+  - {fileID: 2100000, guid: 8c9a53e2881592d4fa18ac522443fbf2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6082,7 +6082,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 509245521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 12.49}
+  m_LocalPosition: {x: 36.71, y: 0, z: 1.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13566,7 +13566,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: cc80e9f7a1018034688ecd7054cbb5ad, type: 2}
     - target: {fileID: 1517176770881268, guid: cc635982ec8e84246a091bdb6949ed4d, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1262736372129758, guid: cc635982ec8e84246a091bdb6949ed4d, type: 2}
       propertyPath: m_IsActive
@@ -23101,7 +23101,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1517176770881268, guid: cc635982ec8e84246a091bdb6949ed4d, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc635982ec8e84246a091bdb6949ed4d, type: 2}

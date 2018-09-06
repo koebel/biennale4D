@@ -96,17 +96,17 @@ public class SceneSwitcher : MonoBehaviour {
         bottom = sceneSwitcher.transform.Find("Bottom").gameObject;
 
         // load Materials
-        matExperiment1 = (Material)Resources.Load("Timeline/Materials/1952_passiv", typeof(Material));
-        //matExperiment2 = (Material)Resources.Load("Timeline/Materials/1984_passiv", typeof(Material));
-        matExperiment2 = defaultMaterial;
-        matExperiment3 = (Material)Resources.Load("Timeline/Materials/2007_passiv", typeof(Material));
-        matExperiment4 = (Material)Resources.Load("Timeline/Materials/2013_passiv", typeof(Material));
+        matExperiment1 = (Material)Resources.Load("Experiments/Materials/experiment1", typeof(Material));
+        matExperiment2 = (Material)Resources.Load("Experiments/Materials/experiment2", typeof(Material));
+        //matExperiment2 = defaultMaterial;
+        matExperiment3 = (Material)Resources.Load("Experiments/Materials/experiment3", typeof(Material));
+        matExperiment4 = (Material)Resources.Load("Experiments/Materials/experiment4", typeof(Material));
 
-        matActiveExperiment1 = (Material)Resources.Load("Timeline/Materials/1952_aktiv", typeof(Material));
-        //matActiveExperiment2 = (Material)Resources.Load("Timeline/Materials/1984_aktiv", typeof(Material));
-        matActiveExperiment2 = defaultMaterial;
-        matActiveExperiment3 = (Material)Resources.Load("Timeline/Materials/2007_aktiv", typeof(Material));
-        matActiveExperiment4 = (Material)Resources.Load("Timeline/Materials/2013_aktiv", typeof(Material));
+        matActiveExperiment1 = (Material)Resources.Load("Experiments/Materials/experiment1_active", typeof(Material));
+        matActiveExperiment2 = (Material)Resources.Load("Experiments/Materials/experiment2_active", typeof(Material));
+        //matActiveExperiment2 = defaultMaterial;
+        matActiveExperiment3 = (Material)Resources.Load("Experiments/Materials/experiment3_active", typeof(Material));
+        matActiveExperiment4 = (Material)Resources.Load("Experiments/Materials/experiment4_active", typeof(Material));
 
         //defaultMat = (Material)Resources.Load("Timeline/Materials/BlackNoReflection", typeof(Material));
         defaultMat = defaultMaterial;
